@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.atobaazul.tfc_textile.mixin",
+  "refmap": "tfc_textile.refmap.json",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PumpingStationBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "tfc_textile:cotton_shirt",
+    "tfc_textile:crocodile_shirt",
+    "tfc_textile:linen_shirt",
+    "tfc_textile:raw_shirt",
+    "tfc_textile:caribou_shirt",
+    "tfc_textile:polarbear_shirt",
+    "tfc_textile:blackbear_shirt",
+    "tfc_textile:grizzlybear_shirt",
+    "tfc_textile:tiger_shirt",
+    "tfc_textile:cougar_shirt",
+    "tfc_textile:panther_shirt",
+    "tfc_textile:saber_shirt",
+    "tfc_textile:direwolf_shirt",
+    "tfc_textile:lion_shirt"
+  ]
+}
