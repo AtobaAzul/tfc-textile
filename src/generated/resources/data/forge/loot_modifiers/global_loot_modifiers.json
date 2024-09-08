@@ -1,6 +1,7 @@
 {
   "entries": [
-    "tfc_textile:blackbear_fur_add"
+    "tfc_textile:blackbear_fur_add",
+    "tfc_textile:remove_hide"
   ],
   "replace": false
 }
