@@ -3,6 +3,7 @@ package net.atobaazul.tfc_textile;
 import com.mojang.logging.LogUtils;
 import net.atobaazul.tfc_textile.event.ClientEvent;
 import net.atobaazul.tfc_textile.item.TFCTextileItems;
+import net.atobaazul.tfc_textile.loot.ModLootModifiers;
 import net.dries007.tfc.common.TFCCreativeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,6 +25,7 @@ public class TFCtextile {
 
     // Define mod id in a common place for everything to reference
     public static final String MODID = "tfc_textile";
+
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -31,6 +33,7 @@ public class TFCtextile {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         TFCTextileItems.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
