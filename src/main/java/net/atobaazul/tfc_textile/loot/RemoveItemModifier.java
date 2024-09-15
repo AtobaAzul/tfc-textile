@@ -20,6 +20,7 @@ import net.minecraftforge.server.command.TextComponentHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.*;
+import java.util.Iterator;
 import java.util.function.Supplier;
 
 public class RemoveItemModifier extends LootModifier {
@@ -41,21 +42,17 @@ public class RemoveItemModifier extends LootModifier {
                 return generatedLoot;
             }
         }
-        ItemStack removed_item = new ItemStack(this.item);
 
-        generatedLoot.forEach(ReplacedItem -> {
-            boolean result = ReplacedItem.equals(removed_item);
+        ItemStack removedItem = new ItemStack(this.item);
+        Iterator<ItemStack> iterator = generatedLoot.iterator();
 
-            if (Minecraft.getInstance().player != null) {
-                Minecraft.getInstance().player.displayClientMessage(Component.literal(String.valueOf(result)), true);
+        while (iterator.hasNext()) {
+            ItemStack currentItem = iterator.next();
+
+            if (ItemStack.isSameItem(currentItem, removedItem)) {
+                iterator.remove(); // Safe way to remove the item
             }
-
-
-            if (ReplacedItem.equals(removed_item)) {
-                generatedLoot.remove(ReplacedItem);
-            }
-        });
-
+        }
 
         return generatedLoot;
     }

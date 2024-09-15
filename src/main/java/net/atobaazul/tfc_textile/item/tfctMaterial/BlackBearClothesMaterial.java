@@ -40,7 +40,7 @@ public class BlackBearClothesMaterial implements ArmorMaterial, TemperatureAlter
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TFCTextileItems.BLACKBEAR_FUR.get(), 1));
+        return Ingredient.of(new ItemStack(TFCTextileItems.BLACK_BEAR_FUR.get(), 1));
     }
 
     @Override

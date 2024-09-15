@@ -65,25 +65,25 @@ public class ClientEvent {
         CuriosRendererRegistry.register(TFCTextileItems.PANTHER_SOCKS.get(),ClothesCurioRenderer::new);
         CuriosRendererRegistry.register(TFCTextileItems.PANTHER_HAT.get(),ClothesCurioRenderer::new);
 
-        CuriosRendererRegistry.register(TFCTextileItems.SABER_PANTS.get(),ClothesCurioRenderer::new);
-        CuriosRendererRegistry.register(TFCTextileItems.SABER_SHIRT.get(),ClothesCurioRenderer::new);
-        CuriosRendererRegistry.register(TFCTextileItems.SABER_SOCKS.get(),ClothesCurioRenderer::new);
-        CuriosRendererRegistry.register(TFCTextileItems.SABER_HAT.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.SABERTOOTH_PANTS.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.SABERTOOTH_SHIRT.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.SABERTOOTH_SOCKS.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.SABERTOOTH_HAT.get(),ClothesCurioRenderer::new);
 
         CuriosRendererRegistry.register(TFCTextileItems.COUGAR_PANTS.get(),ClothesCurioRenderer::new);
         CuriosRendererRegistry.register(TFCTextileItems.COUGAR_SHIRT.get(),ClothesCurioRenderer::new);
         CuriosRendererRegistry.register(TFCTextileItems.COUGAR_SOCKS.get(),ClothesCurioRenderer::new);
         CuriosRendererRegistry.register(TFCTextileItems.COUGAR_HAT.get(),ClothesCurioRenderer::new);
 
-        CuriosRendererRegistry.register(TFCTextileItems.BLACKBEAR_PANTS.get(),ClothesCurioRenderer::new);
-        CuriosRendererRegistry.register(TFCTextileItems.BLACKBEAR_SHIRT.get(),ClothesCurioRenderer::new);
-        CuriosRendererRegistry.register(TFCTextileItems.BLACKBEAR_SOCKS.get(),ClothesCurioRenderer::new);
-        CuriosRendererRegistry.register(TFCTextileItems.BLACKBEAR_HAT.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.BLACK_BEAR_PANTS.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.BLACK_BEAR_SHIRT.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.BLACK_BEAR_SOCKS.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.BLACK_BEAR_HAT.get(),ClothesCurioRenderer::new);
 
-        CuriosRendererRegistry.register(TFCTextileItems.GRIZZLYBEAR_PANTS.get(),ClothesCurioRenderer::new);
-        CuriosRendererRegistry.register(TFCTextileItems.GRIZZLYBEAR_SHIRT.get(),ClothesCurioRenderer::new);
-        CuriosRendererRegistry.register(TFCTextileItems.GRIZZLYBEAR_SOCKS.get(),ClothesCurioRenderer::new);
-        CuriosRendererRegistry.register(TFCTextileItems.GRIZZLYBEAR_HAT.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.GRIZZLY_BEAR_PANTS.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.GRIZZLY_BEAR_SHIRT.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.GRIZZLY_BEAR_SOCKS.get(),ClothesCurioRenderer::new);
+        CuriosRendererRegistry.register(TFCTextileItems.GRIZZLY_BEAR_HAT.get(),ClothesCurioRenderer::new);
 
         CuriosRendererRegistry.register(TFCTextileItems.DIREWOLF_PANTS.get(),ClothesCurioRenderer::new);
         CuriosRendererRegistry.register(TFCTextileItems.DIREWOLF_SHIRT.get(),ClothesCurioRenderer::new);

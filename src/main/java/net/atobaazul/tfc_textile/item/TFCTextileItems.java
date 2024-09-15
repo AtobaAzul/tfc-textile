@@ -53,18 +53,18 @@ public class TFCTextileItems
             () -> new Item(new Item.Properties().stacksTo(32))
 
     );
-    public static final RegistryObject<Item> POLARBEAR_FUR = ITEMS.register(
-            "polarbear_fur",
+    public static final RegistryObject<Item> POLAR_BEAR_FUR = ITEMS.register(
+            "polar_bear_fur",
             () -> new Item(new Item.Properties().stacksTo(32))
 
     );
-    public static final RegistryObject<Item> BLACKBEAR_FUR = ITEMS.register(
-            "blackbear_fur",
+    public static final RegistryObject<Item> BLACK_BEAR_FUR = ITEMS.register(
+            "black_bear_fur",
             () -> new Item(new Item.Properties().stacksTo(32))
 
     );
-    public static final RegistryObject<Item> GRIZZLYBEAR_FUR = ITEMS.register(
-            "grizzlybear_fur",
+    public static final RegistryObject<Item> GRIZZLY_BEAR_FUR = ITEMS.register(
+            "grizzly_bear_fur",
             () -> new Item(new Item.Properties().stacksTo(32))
 
     );
@@ -73,8 +73,8 @@ public class TFCTextileItems
             () -> new Item(new Item.Properties().stacksTo(32))
 
     );
-    public static final RegistryObject<Item> SABER_FUR = ITEMS.register(
-            "saber_fur",
+    public static final RegistryObject<Item> SABERTOOTH_FUR = ITEMS.register(
+            "sabertooth_fur",
             () -> new Item(new Item.Properties().stacksTo(32))
 
     );
@@ -208,20 +208,20 @@ public class TFCTextileItems
 
 
     public static final RegistryObject<Item> POLAR_HAT = ITEMS.register(
-            "polarbear_hat",
-            () -> new ClothesItem(PolarClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(1))
+            "polar_bear_hat",
+            () -> new ClothesItem(PolarBearClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(1))
     );
     public static final RegistryObject<Item> POLAR_SHIRT = ITEMS.register(
-            "polarbear_shirt",
-            () -> new ClothesItem(PolarClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(1))
+            "polar_bear_shirt",
+            () -> new ClothesItem(PolarBearClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(1))
     );
     public static final RegistryObject<Item> POLAR_PANTS = ITEMS.register(
-            "polarbear_pants",
-            () -> new ClothesItem(PolarClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(1))
+            "polar_bear_pants",
+            () -> new ClothesItem(PolarBearClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(1))
     );
     public static final RegistryObject<Item> POLAR_SOCKS = ITEMS.register(
-            "polarbear_boots",
-            () -> new ClothesItem(PolarClothesMaterial.MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1).durability(1))
+            "polar_bear_boots",
+            () -> new ClothesItem(PolarBearClothesMaterial.MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1).durability(1))
     );
 
     //Tiger
@@ -283,63 +283,63 @@ public class TFCTextileItems
             () -> new ClothesItem(PantherClothesMaterial.MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1).durability(1))
     );
 
-    // Saber
+    // Sabertooth
 
 
-    public static final RegistryObject<Item> SABER_HAT = ITEMS.register(
-            "saber_hat",
-            () -> new ClothesItem(SaberClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(1))
+    public static final RegistryObject<Item> SABERTOOTH_HAT = ITEMS.register(
+            "sabertooth_hat",
+            () -> new ClothesItem(SabertoothClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(1))
     );
-    public static final RegistryObject<Item> SABER_SHIRT = ITEMS.register(
-            "saber_shirt",
-            () -> new ClothesItem(SaberClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(1))
+    public static final RegistryObject<Item> SABERTOOTH_SHIRT = ITEMS.register(
+            "sabertooth_shirt",
+            () -> new ClothesItem(SabertoothClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(1))
     );
-    public static final RegistryObject<Item> SABER_PANTS = ITEMS.register(
-            "saber_pants",
-            () -> new ClothesItem(SaberClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(1))
+    public static final RegistryObject<Item> SABERTOOTH_PANTS = ITEMS.register(
+            "sabertooth_pants",
+            () -> new ClothesItem(SabertoothClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(1))
     );
-    public static final RegistryObject<Item> SABER_SOCKS = ITEMS.register(
-            "saber_boots",
-            () -> new ClothesItem(SaberClothesMaterial.MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1).durability(1))
+    public static final RegistryObject<Item> SABERTOOTH_SOCKS = ITEMS.register(
+            "sabertooth_boots",
+            () -> new ClothesItem(SabertoothClothesMaterial.MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1).durability(1))
     );
 
     // Black Bear
 
 
-    public static final RegistryObject<Item> BLACKBEAR_HAT = ITEMS.register(
-            "blackbear_hat",
+    public static final RegistryObject<Item> BLACK_BEAR_HAT = ITEMS.register(
+            "black_bear_hat",
             () -> new ClothesItem(BlackBearClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(1))
     );
-    public static final RegistryObject<Item> BLACKBEAR_SHIRT = ITEMS.register(
-            "blackbear_shirt",
+    public static final RegistryObject<Item> BLACK_BEAR_SHIRT = ITEMS.register(
+            "black_bear_shirt",
             () -> new ClothesItem(BlackBearClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(1))
     );
-    public static final RegistryObject<Item> BLACKBEAR_PANTS = ITEMS.register(
-            "blackbear_pants",
+    public static final RegistryObject<Item> BLACK_BEAR_PANTS = ITEMS.register(
+            "black_bear_pants",
             () -> new ClothesItem(BlackBearClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(1))
     );
-    public static final RegistryObject<Item> BLACKBEAR_SOCKS = ITEMS.register(
-            "blackbear_boots",
+    public static final RegistryObject<Item> BLACK_BEAR_SOCKS = ITEMS.register(
+            "black_bear_boots",
             () -> new ClothesItem(BlackBearClothesMaterial.MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1).durability(1))
     );
 
     // Grizzly Bear
 
 
-    public static final RegistryObject<Item> GRIZZLYBEAR_HAT = ITEMS.register(
-            "grizzlybear_hat",
+    public static final RegistryObject<Item> GRIZZLY_BEAR_HAT = ITEMS.register(
+            "grizzly_bear_hat",
             () -> new ClothesItem(GrizzlyBearClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(1))
     );
-    public static final RegistryObject<Item> GRIZZLYBEAR_SHIRT = ITEMS.register(
-            "grizzlybear_shirt",
+    public static final RegistryObject<Item> GRIZZLY_BEAR_SHIRT = ITEMS.register(
+            "grizzly_bear_shirt",
             () -> new ClothesItem(GrizzlyBearClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(1))
     );
-    public static final RegistryObject<Item> GRIZZLYBEAR_PANTS = ITEMS.register(
-            "grizzlybear_pants",
+    public static final RegistryObject<Item> GRIZZLY_BEAR_PANTS = ITEMS.register(
+            "grizzly_bear_pants",
             () -> new ClothesItem(GrizzlyBearClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(1))
     );
-    public static final RegistryObject<Item> GRIZZLYBEAR_SOCKS = ITEMS.register(
-            "grizzlybear_boots",
+    public static final RegistryObject<Item> GRIZZLY_BEAR_SOCKS = ITEMS.register(
+            "grizzly_bear_boots",
             () -> new ClothesItem(GrizzlyBearClothesMaterial.MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1).durability(1))
     );
 

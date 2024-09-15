@@ -1,0 +1,10 @@
+{
+  "type": "tfc_textile:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "tfc:entities/lion"
+    }
+  ],
+  "item": "tfc_textile:lion_fur"
+}

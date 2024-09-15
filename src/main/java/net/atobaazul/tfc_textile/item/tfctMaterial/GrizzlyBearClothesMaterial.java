@@ -40,7 +40,7 @@ public class GrizzlyBearClothesMaterial implements ArmorMaterial, TemperatureAlt
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TFCTextileItems.GRIZZLYBEAR_FUR.get(), 1));
+        return Ingredient.of(new ItemStack(TFCTextileItems.GRIZZLY_BEAR_FUR.get(), 1));
     }
 
     @Override

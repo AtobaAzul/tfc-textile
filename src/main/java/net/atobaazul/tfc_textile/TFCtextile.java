@@ -102,25 +102,25 @@ public class TFCtextile {
             event.accept(TFCTextileItems.PANTHER_SOCKS);
             event.accept(TFCTextileItems.PANTHER_HAT);
 
-            event.accept(TFCTextileItems.SABER_PANTS);
-            event.accept(TFCTextileItems.SABER_SHIRT);
-            event.accept(TFCTextileItems.SABER_SOCKS);
-            event.accept(TFCTextileItems.SABER_HAT);
+            event.accept(TFCTextileItems.SABERTOOTH_PANTS);
+            event.accept(TFCTextileItems.SABERTOOTH_SHIRT);
+            event.accept(TFCTextileItems.SABERTOOTH_SOCKS);
+            event.accept(TFCTextileItems.SABERTOOTH_HAT);
 
             event.accept(TFCTextileItems.COUGAR_PANTS);
             event.accept(TFCTextileItems.COUGAR_SHIRT);
             event.accept(TFCTextileItems.COUGAR_SOCKS);
             event.accept(TFCTextileItems.COUGAR_HAT);
 
-            event.accept(TFCTextileItems.BLACKBEAR_PANTS);
-            event.accept(TFCTextileItems.BLACKBEAR_SHIRT);
-            event.accept(TFCTextileItems.BLACKBEAR_SOCKS);
-            event.accept(TFCTextileItems.BLACKBEAR_HAT);
+            event.accept(TFCTextileItems.BLACK_BEAR_PANTS);
+            event.accept(TFCTextileItems.BLACK_BEAR_SHIRT);
+            event.accept(TFCTextileItems.BLACK_BEAR_SOCKS);
+            event.accept(TFCTextileItems.BLACK_BEAR_HAT);
 
-            event.accept(TFCTextileItems.GRIZZLYBEAR_PANTS);
-            event.accept(TFCTextileItems.GRIZZLYBEAR_SHIRT);
-            event.accept(TFCTextileItems.GRIZZLYBEAR_SOCKS);
-            event.accept(TFCTextileItems.GRIZZLYBEAR_HAT);
+            event.accept(TFCTextileItems.GRIZZLY_BEAR_PANTS);
+            event.accept(TFCTextileItems.GRIZZLY_BEAR_SHIRT);
+            event.accept(TFCTextileItems.GRIZZLY_BEAR_SOCKS);
+            event.accept(TFCTextileItems.GRIZZLY_BEAR_HAT);
 
             event.accept(TFCTextileItems.DIREWOLF_PANTS);
             event.accept(TFCTextileItems.DIREWOLF_SHIRT);
@@ -139,12 +139,12 @@ public class TFCtextile {
             //event.accept(TFCTextileItems.LINEN_CLOTH);
             event.accept(TFCTextileItems.CARIBOU_FUR);
             event.accept(TFCTextileItems.COUGAR_FUR);
-            event.accept(TFCTextileItems.BLACKBEAR_FUR);
+            event.accept(TFCTextileItems.BLACK_BEAR_FUR);
             event.accept(TFCTextileItems.COTTON_STRING);
-            event.accept(TFCTextileItems.GRIZZLYBEAR_FUR);
+            event.accept(TFCTextileItems.GRIZZLY_BEAR_FUR);
             event.accept(TFCTextileItems.TIGER_FUR);
-            event.accept(TFCTextileItems.SABER_FUR);
-            event.accept(TFCTextileItems.POLARBEAR_FUR);
+            event.accept(TFCTextileItems.SABERTOOTH_FUR);
+            event.accept(TFCTextileItems.POLAR_BEAR_FUR);
             event.accept(TFCTextileItems.PANTHER_FUR);
             event.accept(TFCTextileItems.LION_FUR);
             event.accept(TFCTextileItems.DIREWOLF_FUR);
