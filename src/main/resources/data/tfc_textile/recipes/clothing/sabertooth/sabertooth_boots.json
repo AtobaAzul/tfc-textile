@@ -11,7 +11,7 @@
       "tag": "forge:string"
     },
     "B": {
-      "item": "tfc_textile:grizzlybear_fur"
+      "item": "tfc_textile:sabertooth_fur"
     },
     "C": {
       "item": "minecraft:leather_boots"
@@ -19,6 +19,6 @@
 
   },
   "result": {
-    "item": "tfc_textile:grizzlybear_boots"
+    "item": "tfc_textile:sabertooth_boots"
   }
 }

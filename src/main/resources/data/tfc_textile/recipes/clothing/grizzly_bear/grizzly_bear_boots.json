@@ -1,8 +1,8 @@
 
+
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "A A",
     "ACA",
     "ABA"
   ],
@@ -11,14 +11,14 @@
       "tag": "forge:string"
     },
     "B": {
-      "item": "tfc_textile:polarbear_fur"
+      "item": "tfc_textile:grizzly_bear_fur"
     },
     "C": {
-      "item": "minecraft:leather_chestplate"
+      "item": "minecraft:leather_boots"
     }
 
   },
   "result": {
-    "item": "tfc_textile:polarbear_shirt"
+    "item": "tfc_textile:grizzly_bear_boots"
   }
 }

@@ -11,7 +11,7 @@
       "tag": "forge:string"
     },
     "B": {
-      "item": "tfc_textile:polarbear_fur"
+      "item": "tfc_textile:polar_bear_fur"
     },
     "C": {
       "item": "minecraft:leather_leggings"
@@ -19,6 +19,6 @@
 
   },
   "result": {
-    "item": "tfc_textile:polarbear_pants"
+    "item": "tfc_textile:polar_bear_pants"
   }
 }

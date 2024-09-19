@@ -3,21 +3,22 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "ABA",
-    "ACA"
+    "ACA",
+    "A A"
   ],
   "key": {
     "A": {
       "tag": "forge:string"
     },
     "B": {
-      "item": "tfc_textile:polarbear_fur"
+      "item": "tfc_textile:sabertooth_fur"
     },
     "C": {
-      "item": "minecraft:leather_helmet"
+      "item": "minecraft:leather_leggings"
     }
 
   },
   "result": {
-    "item": "tfc_textile:polarbear_hat"
+    "item": "tfc_textile:sabertooth_pants"
   }
 }

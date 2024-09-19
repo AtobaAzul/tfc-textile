@@ -1,24 +1,24 @@
 
+
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ABA",
     "ACA",
-    "A A"
+    "ABA"
   ],
   "key": {
     "A": {
       "tag": "forge:string"
     },
     "B": {
-      "item": "tfc_textile:grizzlybear_fur"
+      "item": "tfc_textile:polar_bear_fur"
     },
     "C": {
-      "item": "minecraft:leather_leggings"
+      "item": "minecraft:leather_boots"
     }
 
   },
   "result": {
-    "item": "tfc_textile:grizzlybear_pants"
+    "item": "tfc_textile:polar_bear_boots"
   }
 }
