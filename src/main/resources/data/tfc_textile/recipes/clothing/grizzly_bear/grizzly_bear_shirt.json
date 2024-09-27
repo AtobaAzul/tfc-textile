@@ -11,7 +11,7 @@
       "tag": "forge:string"
     },
     "B": {
-      "item": "tfc_textile:grizzlybear_fur"
+      "item": "tfc_textile:grizzly_bear_fur"
     },
     "C": {
       "item": "minecraft:leather_chestplate"
@@ -19,6 +19,6 @@
 
   },
   "result": {
-    "item": "tfc_textile:grizzlybear_shirt"
+    "item": "tfc_textile:grizzly_bear_shirt"
   }
 }
