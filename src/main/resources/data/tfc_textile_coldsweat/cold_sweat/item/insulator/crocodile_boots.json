@@ -1,0 +1,15 @@
+{
+  "type": "armor",
+  "insulation": {
+    "heat": 9,
+    "cold": 2
+  },
+  "data": {
+    "items": [
+      "tfc_textile_coldsweat:crocodile_boots"
+    ]
+  },
+  "immune_temp_modifiers": {
+    "cold_sweat:water": 0.25
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "tfc_textile_coldsweat:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "tfc:entities/sabertooth"
+    }
+  ],
+  "item": "tfc_textile_coldsweat:sabertooth_fur"
+}

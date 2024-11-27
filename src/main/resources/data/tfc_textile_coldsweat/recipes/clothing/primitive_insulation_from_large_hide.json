@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tfc:large_raw_hide"
+    },
+    {
+      "item": "tfc:straw"
+    },
+    {
+      "item": "tfc:straw"
+    },
+    {
+      "item": "tfc:straw"
+    }
+  ],
+
+  "result": {
+    "item": "tfc_textile_coldsweat:primitive_insulation",
+    "count": 4
+  }
+}

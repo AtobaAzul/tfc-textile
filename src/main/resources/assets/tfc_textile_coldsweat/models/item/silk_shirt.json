@@ -1,0 +1,74 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "tfc_textile_coldsweat:item/silk_shirt",
+		"particle": "tfc_textile_coldsweat:item/silk_shirt"
+	},
+	"elements": [
+		{
+			"name": "Body Layer",
+			"from": [3.249, 11.249, 5.249],
+			"to": [12.751, 24.751, 10.751],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2, 2, 6, 8], "texture": "#1"},
+				"east": {"uv": [0, 2, 2, 8], "texture": "#1"},
+				"south": {"uv": [8, 2, 12, 8], "texture": "#1"},
+				"west": {"uv": [6, 2, 8, 8], "texture": "#1"},
+				"up": {"uv": [6, 2, 2, 0], "texture": "#1"},
+				"down": {"uv": [10, 0, 6, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Left Arm Layer",
+			"from": [-0.75, 11.25, 5.25],
+			"to": [4.75, 24.75, 10.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [10, 10, 12, 16], "texture": "#1"},
+				"east": {"uv": [8, 10, 10, 16], "texture": "#1"},
+				"south": {"uv": [14, 10, 16, 16], "texture": "#1"},
+				"west": {"uv": [12, 10, 14, 16], "texture": "#1"},
+				"up": {"uv": [12, 10, 10, 8], "texture": "#1"},
+				"down": {"uv": [14, 8, 12, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Right Arm Layer",
+			"from": [11.25, 11.25, 5.25],
+			"to": [16.75, 24.75, 10.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2, 10, 4, 16], "texture": "#1"},
+				"east": {"uv": [0, 10, 2, 16], "texture": "#1"},
+				"south": {"uv": [6, 10, 8, 16], "texture": "#1"},
+				"west": {"uv": [4, 10, 6, 16], "texture": "#1"},
+				"up": {"uv": [4, 10, 2, 8], "texture": "#1"},
+				"down": {"uv": [6, 8, 4, 10], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "shirt",
+			"origin": [8, 0, 8],
+			"color": 4,
+			"children": [
+				0,
+				{
+					"name": "left_arm",
+					"origin": [8, 0, 8],
+					"color": 0,
+					"children": [1]
+				},
+				{
+					"name": "right_arm",
+					"origin": [8, 0, 8],
+					"color": 0,
+					"children": [2]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,24 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "ACA",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:string"
+    },
+    "B": {
+      "item": "tfc_textile_coldsweat:black_bear_fur"
+    },
+    "C": {
+      "item": "minecraft:leather_leggings"
+    }
+
+  },
+  "result": {
+    "item": "tfc_textile_coldsweat:black_bear_pants"
+  }
+}

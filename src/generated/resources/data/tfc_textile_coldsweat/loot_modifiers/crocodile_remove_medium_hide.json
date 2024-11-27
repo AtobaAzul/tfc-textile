@@ -1,0 +1,10 @@
+{
+  "type": "tfc_textile_coldsweat:remove_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "tfc:entities/crocodile"
+    }
+  ],
+  "item": "tfc:large_raw_hide"
+}

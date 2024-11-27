@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:string"
+    },
+    "B": {
+      "item": "tfc_textile_coldsweat:lion_fur"
+    },
+    "C": {
+      "item": "minecraft:leather_helmet"
+    }
+
+  },
+  "result": {
+    "item": "tfc_textile_coldsweat:lion_hat"
+  }
+}
