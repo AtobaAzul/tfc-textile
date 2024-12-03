@@ -382,8 +382,50 @@ public class TFCTextileItems
             () -> new ArmorItem(LionClothesMaterial.MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1).durability(65))
     );
 
+    //Wool
+    public static final RegistryObject<Item> WOOL_HAT = ITEMS.register(
+            "wool_hat",
+            () -> new ArmorItem(WoolClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60))
+    );
+    public static final RegistryObject<Item> WOOL_SHIRT = ITEMS.register(
+            "wool_shirt",
+            () -> new ArmorItem(WoolClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80))
+    );
+    public static final RegistryObject<Item> WOOL_PANTS = ITEMS.register(
+            "wool_pants",
+            () -> new ArmorItem(WoolClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75))
+    );
 
 
+    //Burlap
+    public static final RegistryObject<Item> BURLAP_HAT = ITEMS.register(
+            "burlap_hat",
+            () -> new ArmorItem(BurlapClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60))
+    );
+    public static final RegistryObject<Item> BURLAP_SHIRT = ITEMS.register(
+            "burlap_shirt",
+            () -> new ArmorItem(BurlapClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80))
+    );
+    public static final RegistryObject<Item> BURLAP_PANTS = ITEMS.register(
+            "burlap_pants",
+            () -> new ArmorItem(BurlapClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75))
+    );
+
+
+    //Silk
+
+    public static final RegistryObject<Item> SILK_HAT = ITEMS.register(
+            "silk_hat",
+            () -> new ArmorItem(SilkClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60))
+    );
+    public static final RegistryObject<Item> SILK_SHIRT = ITEMS.register(
+            "silk_shirt",
+            () -> new ArmorItem(SilkClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80))
+    );
+    public static final RegistryObject<Item> SILK_PANTS = ITEMS.register(
+            "silk_pants",
+            () -> new ArmorItem(SilkClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75))
+    );
 
     /*public static final RegistryObject<Item> SILK_COWL = ITEMS.register(
             "silk_cowl",

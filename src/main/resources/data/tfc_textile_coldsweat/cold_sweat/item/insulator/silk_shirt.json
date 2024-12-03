@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "heat": 7,
+    "cold": 3
+  },
+  "data": {
+    "items": [
+      "tfc_textile_coldsweat:silk_shirt"
+    ]
+  }
+}

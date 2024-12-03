@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tfc_textile_coldsweat:item/silk_hat"
+    "layer0": "tfc_textile_coldsweat:item/wool_hat"
   }
 }

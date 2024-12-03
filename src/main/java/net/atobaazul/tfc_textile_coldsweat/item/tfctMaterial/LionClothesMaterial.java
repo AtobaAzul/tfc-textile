@@ -20,7 +20,7 @@ public class LionClothesMaterial implements ArmorMaterial {
 
     @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return 0;
+        return 1;
     }
 
     @Override

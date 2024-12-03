@@ -1,7 +1,7 @@
 package net.atobaazul.tfc_textile_coldsweat.item.tfctMaterial;
 
-
 import net.atobaazul.tfc_textile_coldsweat.item.TFCTextileItems;
+import net.dries007.tfc.common.items.TFCItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -10,19 +10,18 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
+public class BurlapClothesMaterial implements ArmorMaterial {
 
-public class CaribouClothesMaterial implements ArmorMaterial {
-
-    public static final CaribouClothesMaterial MATERIAL = new CaribouClothesMaterial();
+    public static final BurlapClothesMaterial MATERIAL = new BurlapClothesMaterial();
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
-        return 4000;
+        return 3000;
     }
 
     @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return 2;
+        return 1;
     }
 
     @Override
@@ -37,12 +36,12 @@ public class CaribouClothesMaterial implements ArmorMaterial {
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TFCTextileItems.CARIBOU_FUR.get(), 1));
+        return Ingredient.of(new ItemStack(TFCItems.BURLAP_CLOTH.get(), 1));
     }
 
     @Override
     public @NotNull String getName() {
-        return "tfc_textile_coldsweat:caribou_fur";
+        return "tfc_textile_coldsweat:burlap";
     }
 
     @Override

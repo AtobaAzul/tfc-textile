@@ -130,7 +130,19 @@ public class TFCtextile {
             event.accept(TFCTextileItems.LION_SOCKS);
             event.accept(TFCTextileItems.LION_HAT);
 
+            event.accept(TFCTextileItems.WOOL_HAT);
+            event.accept(TFCTextileItems.WOOL_PANTS);
+            event.accept(TFCTextileItems.WOOL_SHIRT);
+
+            event.accept(TFCTextileItems.BURLAP_SHIRT);
+            event.accept(TFCTextileItems.BURLAP_PANTS);
+            event.accept(TFCTextileItems.BURLAP_HAT);
+
+            event.accept(TFCTextileItems.SILK_SHIRT);
+            event.accept(TFCTextileItems.SILK_PANTS);
+            event.accept(TFCTextileItems.SILK_HAT);
         };
+
         if (event.getTab() == TFCCreativeTabs.MISC.tab().get()) {
             event.accept(TFCTextileItems.PRIMITIVE_INSULATION);
             //event.accept(TFCTextileItems.COTTON_CLOTH);
@@ -138,7 +150,7 @@ public class TFCtextile {
             event.accept(TFCTextileItems.CARIBOU_FUR);
             event.accept(TFCTextileItems.COUGAR_FUR);
             event.accept(TFCTextileItems.BLACK_BEAR_FUR);
-            event.accept(TFCTextileItems.COTTON_STRING);
+            //event.accept(TFCTextileItems.COTTON_STRING);
             event.accept(TFCTextileItems.GRIZZLY_BEAR_FUR);
             event.accept(TFCTextileItems.TIGER_FUR);
             event.accept(TFCTextileItems.SABERTOOTH_FUR);
