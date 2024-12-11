@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "heat": -4,
+    "cold": 8
+  },
+  "data": {
+    "items": [
+      "textile:caribou_boots"
+    ]
+  }
+}

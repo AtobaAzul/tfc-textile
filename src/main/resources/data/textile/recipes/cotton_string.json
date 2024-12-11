@@ -1,0 +1,23 @@
+{
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "textile:cotton_ball"
+      },
+      {
+        "item": "textile:cotton_ball"
+      },
+      {
+        "item": "textile:cotton_ball"
+      },
+      {
+        "item": "tfc:spindle"
+      }
+    ],
+    "result": {
+      "item": "textile:cotton_string"
+    }
+  }
+}

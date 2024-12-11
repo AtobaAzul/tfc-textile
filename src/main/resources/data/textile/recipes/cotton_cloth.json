@@ -1,0 +1,14 @@
+{
+  "type": "tfc:loom",
+  "ingredient": {
+    "ingredient": {
+      "item": "textile:cotton_string"
+    },
+    "count": 16
+  },
+  "result": {
+    "item": "textile:cotton_cloth"
+  },
+  "steps_required": 16,
+  "in_progress_texture": "textile:item/cotton"
+}

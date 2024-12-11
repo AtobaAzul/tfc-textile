@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "heat": 2,
+    "cold": 5
+  },
+  "data": {
+    "items": [
+      "textile:cougar_hat"
+    ]
+  }
+}

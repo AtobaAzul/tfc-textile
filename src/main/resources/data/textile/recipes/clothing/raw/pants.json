@@ -1,0 +1,14 @@
+{
+  "type": "tfc:knapping",
+  "knapping_type": "textile:raw_hide",
+  "pattern": [
+    "XXXXX",
+    "XXXXX",
+    "XX XX",
+    "XX XX",
+    "XX XX"
+  ],
+  "result": {
+    "item": "textile:raw_pants"
+  }
+}

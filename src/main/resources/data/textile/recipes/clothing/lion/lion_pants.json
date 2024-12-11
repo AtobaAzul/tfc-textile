@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "ACA",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:string"
+    },
+    "B": {
+      "item": "textile:lion_fur"
+    },
+    "C": {
+      "item": "minecraft:leather_leggings"
+    }
+  },
+  "result": {
+    "item": "textile:lion_pants"
+  }
+}

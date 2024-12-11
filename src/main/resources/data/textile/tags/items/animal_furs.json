@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "textile:caribou_fur",
+    "textile:polar_bear_fur",
+    "textile:black_bear_fur",
+    "textile:grizzly_bear_fur",
+    "textile:tiger_fur",
+    "textile:cougar_fur",
+    "textile:panther_fur",
+    "textile:sabertooth_fur",
+    "textile:direwolf_fur",
+    "textile:lion_fur"
+  ]
+}

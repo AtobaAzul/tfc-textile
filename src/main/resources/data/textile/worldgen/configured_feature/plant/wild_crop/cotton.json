@@ -1,0 +1,6 @@
+{
+  "type": "textile:tall_wild_crop",
+  "config": {
+    "block": "textile:wild_crop/cotton"
+  }
+}

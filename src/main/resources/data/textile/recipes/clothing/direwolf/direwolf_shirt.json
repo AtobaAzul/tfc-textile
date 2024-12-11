@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A A",
+    "ACA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:string"
+    },
+    "B": {
+      "item": "textile:direwolf_fur"
+    },
+    "C": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "item": "textile:direwolf_shirt"
+  }
+}

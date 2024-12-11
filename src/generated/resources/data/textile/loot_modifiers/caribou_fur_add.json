@@ -1,0 +1,10 @@
+{
+  "type": "textile:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "tfc:entities/caribou"
+    }
+  ],
+  "item": "textile:caribou_fur"
+}

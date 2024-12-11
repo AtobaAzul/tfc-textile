@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A A",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "textile:cotton_cloth"
+    }
+  },
+  "result": {
+    "item": "textile:linen_shirt"
+  }
+}

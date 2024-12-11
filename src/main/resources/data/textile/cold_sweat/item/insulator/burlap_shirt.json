@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "heat": 5,
+    "cold": 5
+  },
+  "data": {
+    "items": [
+      "textile:burlap_shirt"
+    ]
+  }
+}

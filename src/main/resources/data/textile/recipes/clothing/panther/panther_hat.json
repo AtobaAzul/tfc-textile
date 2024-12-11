@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:string"
+    },
+    "B": {
+      "item": "textile:panther_fur"
+    },
+    "C": {
+      "item": "minecraft:leather_helmet"
+    }
+  },
+  "result": {
+    "item": "textile:panther_hat"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "mature=false": {
+      "model": "textile:block/dead_crop/dead_cotton_1"
+    },
+    "mature=true,part=top": {
+      "model": "textile:block/dead_crop/dead_cotton_top"
+    },
+    "mature=true,part=bottom": {
+      "model": "textile:block/dead_crop/dead_cotton_bottom"
+    }
+  }
+}

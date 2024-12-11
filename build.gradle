@@ -133,7 +133,7 @@ repositories {
 dependencies {
 
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf("curse.maven:terrafirmacraft-302973:5276689")
+    implementation fg.deobf("curse.maven:terrafirmacraft-302973:5943050")
     implementation fg.deobf("curse.maven:jei-238222:4712868")
     implementation fg.deobf("curse.maven:curios-309927:5843594")
     implementation fg.deobf("curse.maven:patchouli-306770:4966125")
@@ -234,8 +234,8 @@ tasks.withType(JavaCompile).configureEach {
 
 mixin {
     // MixinGradle Settings
-    add sourceSets.main, 'tfc_textile_coldsweat.refmap.json'
-    config 'tfc_textile_coldsweat.mixins.json'
+    add sourceSets.main, 'textile.refmap.json'
+    config 'textile.mixins.json'
 
 
 }

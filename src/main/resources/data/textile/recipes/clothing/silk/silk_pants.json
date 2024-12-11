@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "A A",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "tfc:silk_cloth"
+    }
+  },
+  "result": {
+    "item": "textile:silk_pants"
+  }
+}

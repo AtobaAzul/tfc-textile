@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "textile:plant/wild_crop/cotton_patch",
+    "textile:plant/wild_crop/flax_patch"
+  ]
+}

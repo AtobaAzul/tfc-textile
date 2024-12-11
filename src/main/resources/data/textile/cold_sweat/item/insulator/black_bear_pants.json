@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "heat": 2,
+    "cold": 7
+  },
+  "data": {
+    "items": [
+      "textile:black_bear_pants"
+    ]
+  }
+}

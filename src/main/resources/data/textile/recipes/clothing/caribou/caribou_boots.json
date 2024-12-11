@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:string"
+    },
+    "B": {
+      "item": "textile:caribou_fur"
+    },
+    "C": {
+      "item": "minecraft:leather_boots"
+    }
+  },
+  "result": {
+    "item": "textile:caribou_boots"
+  }
+}

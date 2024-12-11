@@ -1,0 +1,10 @@
+{
+  "type": "textile:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "tfc:entities/black_bear"
+    }
+  ],
+  "item": "textile:black_bear_fur"
+}

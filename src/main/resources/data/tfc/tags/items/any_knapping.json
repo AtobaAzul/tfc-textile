@@ -1,7 +1,6 @@
 {
-    "replace": false,
-    "values": [
-      "tfc_textile_coldsweat:primitive_insulation"
-
-    ]
-  }
+  "replace": false,
+  "values": [
+    "textile:primitive_insulation"
+  ]
+}

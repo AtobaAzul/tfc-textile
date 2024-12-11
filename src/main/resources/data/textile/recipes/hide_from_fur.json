@@ -1,0 +1,17 @@
+{
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "tag": "textile:animal_furs"
+      },
+      {
+        "tag": "tfc:knives"
+      }
+    ],
+    "result": {
+      "item": "tfc:large_raw_hide"
+    }
+  }
+}

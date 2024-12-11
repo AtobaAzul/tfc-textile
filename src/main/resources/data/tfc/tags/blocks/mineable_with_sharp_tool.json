@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "textile:crop/cotton",
+    "textile:crop/flax",
+    "textile:wild_crop/cotton",
+    "textile:wild_crop/flax",
+    "textile:dead_crop/cotton",
+    "textile:dead_crop/flax"
+  ]
+}

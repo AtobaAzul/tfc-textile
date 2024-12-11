@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "textile:seeds/cotton",
+    "textile:seeds/flax"
+  ]
+}
