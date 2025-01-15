@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "textile:item/cotton_seeds"
+    "layer0": "textile:item/flax_seeds"
   }
 }
