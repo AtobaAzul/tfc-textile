@@ -133,14 +133,14 @@ repositories {
 dependencies {
 
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf("curse.maven:terrafirmacraft-302973:5943050")
+    implementation fg.deobf("curse.maven:terrafirmacraft-${tfc_version}")
     implementation fg.deobf("curse.maven:jei-238222:4712868")
-    implementation fg.deobf("curse.maven:curios-309927:5843594")
-    implementation fg.deobf("curse.maven:patchouli-306770:4966125")
-    implementation fg.deobf("curse.maven:firmalife-453394:5477629")
-    implementation fg.deobf("curse.maven:jade-324717:5640610")
-    implementation fg.deobf("curse.maven:cold-sweat-506194:5858997")
-    implementation fg.deobf("curse.maven:tfc-cold-sweat-1130934:5858347")
+    implementation fg.deobf("curse.maven:curios-${curios_version}")
+    implementation fg.deobf("curse.maven:patchouli-${patchouli_version}")
+    implementation fg.deobf("curse.maven:firmalife-${firmalife_version}")
+    implementation fg.deobf("curse.maven:jade-${jade_version}")
+    implementation fg.deobf("curse.maven:cold-sweat-${cold_sweat_version}")
+    implementation fg.deobf("curse.maven:tfc-cold-sweat-${tfc_cold_sweat_version}")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
 
