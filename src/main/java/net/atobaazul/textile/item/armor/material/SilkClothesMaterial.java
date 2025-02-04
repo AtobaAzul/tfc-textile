@@ -1,6 +1,6 @@
-package net.atobaazul.textile.item.material;
+package net.atobaazul.textile.item.armor.material;
 
-import net.atobaazul.textile.item.TextileItems;
+import net.dries007.tfc.common.items.TFCItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -9,9 +9,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-public class GrizzlyBearClothesMaterial implements ArmorMaterial {
+public class SilkClothesMaterial implements ArmorMaterial {
 
-    public static final GrizzlyBearClothesMaterial MATERIAL = new GrizzlyBearClothesMaterial();
+    public static final SilkClothesMaterial MATERIAL = new SilkClothesMaterial();
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
@@ -35,12 +35,12 @@ public class GrizzlyBearClothesMaterial implements ArmorMaterial {
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TextileItems.GRIZZLY_BEAR_FUR.get(), 1));
+        return Ingredient.of(new ItemStack(TFCItems.SILK_CLOTH.get(), 1));
     }
 
     @Override
     public @NotNull String getName() {
-        return "textile:grizzlybear_fur";
+        return "textile:silk";
     }
 
     @Override

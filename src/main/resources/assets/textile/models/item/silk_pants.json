@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "textile:item/silk_pants"
+    "layer0": "textile:item/silk_pants",
+    "layer1": "textile:item/silk_pants_overlay"
   }
 }

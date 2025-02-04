@@ -1,6 +1,6 @@
-package net.atobaazul.textile.item.material;
+package net.atobaazul.textile.item.armor.material;
 
-import net.atobaazul.textile.item.TextileItems;
+import net.atobaazul.textile.registries.TextileItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -9,9 +9,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-public class CottonClothesMaterial implements ArmorMaterial {
-
-    public static final CottonClothesMaterial MATERIAL = new CottonClothesMaterial();
+public class LinenClothesMaterial implements ArmorMaterial {
+    public static final LinenClothesMaterial MATERIAL = new LinenClothesMaterial();
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
@@ -25,7 +24,7 @@ public class CottonClothesMaterial implements ArmorMaterial {
 
     @Override
     public int getEnchantmentValue() {
-        return 0;
+        return 1;
     }
 
     @Override
@@ -35,12 +34,12 @@ public class CottonClothesMaterial implements ArmorMaterial {
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TextileItems.COTTON_CLOTH.get(), 1));
+        return Ingredient.of(new ItemStack(TextileItems.LINEN_CLOTH.get(), 1));
     }
 
     @Override
     public @NotNull String getName() {
-        return "textile:cotton_cloth";
+        return "textile:linen_cloth";
     }
 
     @Override

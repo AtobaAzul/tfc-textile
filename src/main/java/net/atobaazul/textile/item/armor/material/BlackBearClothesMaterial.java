@@ -1,6 +1,6 @@
-package net.atobaazul.textile.item.material;
+package net.atobaazul.textile.item.armor.material;
 
-import net.atobaazul.textile.item.TextileItems;
+import net.atobaazul.textile.registries.TextileItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -9,18 +9,18 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-public class PolarBearClothesMaterial implements ArmorMaterial {
+public class BlackBearClothesMaterial implements ArmorMaterial {
 
-    public static final PolarBearClothesMaterial MATERIAL = new PolarBearClothesMaterial();
+    public static final BlackBearClothesMaterial MATERIAL = new BlackBearClothesMaterial();
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
-        return 4000;
+        return 3000;
     }
 
     @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return 2;
+        return 1;
     }
 
     @Override
@@ -35,12 +35,12 @@ public class PolarBearClothesMaterial implements ArmorMaterial {
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TextileItems.POLAR_BEAR_FUR.get(), 1));
+        return Ingredient.of(new ItemStack(TextileItems.BLACK_BEAR_FUR.get(), 1));
     }
 
     @Override
     public @NotNull String getName() {
-        return "textile:polarbear_fur";
+        return "textile:blackbear_fur";
     }
 
     @Override

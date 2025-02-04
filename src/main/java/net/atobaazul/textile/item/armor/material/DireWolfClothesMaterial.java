@@ -1,7 +1,6 @@
-package net.atobaazul.textile.item.material;
+package net.atobaazul.textile.item.armor.material;
 
-
-import net.atobaazul.textile.item.TextileItems;
+import net.atobaazul.textile.registries.TextileItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -10,10 +9,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
+public class DireWolfClothesMaterial implements ArmorMaterial {
 
-public class CaribouClothesMaterial implements ArmorMaterial {
-
-    public static final CaribouClothesMaterial MATERIAL = new CaribouClothesMaterial();
+    public static final DireWolfClothesMaterial MATERIAL = new DireWolfClothesMaterial();
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
@@ -22,7 +20,7 @@ public class CaribouClothesMaterial implements ArmorMaterial {
 
     @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return 2;
+        return 1;
     }
 
     @Override
@@ -37,12 +35,12 @@ public class CaribouClothesMaterial implements ArmorMaterial {
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TextileItems.CARIBOU_FUR.get(), 1));
+        return Ingredient.of(new ItemStack(TextileItems.DIREWOLF_FUR.get(), 1));
     }
 
     @Override
     public @NotNull String getName() {
-        return "textile:caribou_fur";
+        return "textile:direwolf_fur";
     }
 
     @Override
@@ -54,5 +52,4 @@ public class CaribouClothesMaterial implements ArmorMaterial {
     public float getKnockbackResistance() {
         return 0;
     }
-
 }

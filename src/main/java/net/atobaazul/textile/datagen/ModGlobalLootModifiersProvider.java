@@ -1,9 +1,9 @@
 package net.atobaazul.textile.datagen;
 
 import net.atobaazul.textile.Textile;
-import net.atobaazul.textile.item.TextileItems;
 import net.atobaazul.textile.loot.AddItemModifier;
 import net.atobaazul.textile.loot.RemoveItemModifier;
+import net.atobaazul.textile.registries.TextileItems;
 import net.dries007.tfc.common.items.HideItemType;
 import net.dries007.tfc.common.items.TFCItems;
 import net.minecraft.data.PackOutput;

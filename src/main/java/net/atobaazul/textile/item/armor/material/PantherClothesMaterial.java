@@ -1,6 +1,6 @@
-package net.atobaazul.textile.item.material;
+package net.atobaazul.textile.item.armor.material;
 
-import net.dries007.tfc.common.items.TFCItems;
+import net.atobaazul.textile.registries.TextileItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -9,9 +9,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-public class WoolClothesMaterial implements ArmorMaterial {
+public class PantherClothesMaterial implements ArmorMaterial {
 
-    public static final WoolClothesMaterial MATERIAL = new WoolClothesMaterial();
+    public static final PantherClothesMaterial MATERIAL = new PantherClothesMaterial();
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
@@ -35,12 +35,12 @@ public class WoolClothesMaterial implements ArmorMaterial {
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TFCItems.WOOL_CLOTH.get(), 1));
+        return Ingredient.of(new ItemStack(TextileItems.PANTHER_FUR.get(), 1));
     }
 
     @Override
     public @NotNull String getName() {
-        return "textile:wool";
+        return "textile:panther_fur";
     }
 
     @Override

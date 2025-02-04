@@ -1,6 +1,7 @@
-package net.atobaazul.textile.item.material;
+package net.atobaazul.textile.item.armor.material;
 
-import net.atobaazul.textile.item.TextileItems;
+
+import net.atobaazul.textile.registries.TextileItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -10,18 +11,18 @@ import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
 
-public class SabertoothClothesMaterial implements ArmorMaterial {
+public class CaribouClothesMaterial implements ArmorMaterial {
 
-    public static final SabertoothClothesMaterial MATERIAL = new SabertoothClothesMaterial();
+    public static final CaribouClothesMaterial MATERIAL = new CaribouClothesMaterial();
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
-        return 3000;
+        return 4000;
     }
 
     @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return 1;
+        return 2;
     }
 
     @Override
@@ -36,12 +37,12 @@ public class SabertoothClothesMaterial implements ArmorMaterial {
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TextileItems.SABERTOOTH_FUR.get(), 1));
+        return Ingredient.of(new ItemStack(TextileItems.CARIBOU_FUR.get(), 1));
     }
 
     @Override
     public @NotNull String getName() {
-        return "textile:sabertooth_fur";
+        return "textile:caribou_fur";
     }
 
     @Override

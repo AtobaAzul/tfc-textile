@@ -1,6 +1,6 @@
-package net.atobaazul.textile.item.material;
+package net.atobaazul.textile.item.armor.material;
 
-import net.atobaazul.textile.item.TextileItems;
+import net.atobaazul.textile.registries.TextileItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -9,18 +9,18 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-public class RawHideClothesMaterial implements ArmorMaterial {
+public class LionClothesMaterial implements ArmorMaterial {
 
-    public static final RawHideClothesMaterial MATERIAL = new RawHideClothesMaterial();
+    public static final LionClothesMaterial MATERIAL = new LionClothesMaterial();
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
-        return 1500;
+        return 3000;
     }
 
     @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return 0;
+        return 1;
     }
 
     @Override
@@ -35,12 +35,12 @@ public class RawHideClothesMaterial implements ArmorMaterial {
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TextileItems.PRIMITIVE_INSULATION.get(), 1));
+        return Ingredient.of(new ItemStack(TextileItems.LION_FUR.get(), 1));
     }
 
     @Override
     public @NotNull String getName() {
-        return "textile:raw_hide";
+        return "textile:lion_fur";
     }
 
     @Override
@@ -52,5 +52,4 @@ public class RawHideClothesMaterial implements ArmorMaterial {
     public float getKnockbackResistance() {
         return 0;
     }
-
 }

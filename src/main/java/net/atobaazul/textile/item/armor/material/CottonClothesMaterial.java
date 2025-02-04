@@ -1,6 +1,6 @@
-package net.atobaazul.textile.item.material;
+package net.atobaazul.textile.item.armor.material;
 
-import net.atobaazul.textile.item.TextileItems;
+import net.atobaazul.textile.registries.TextileItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -9,9 +9,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-public class BlackBearClothesMaterial implements ArmorMaterial {
+public class CottonClothesMaterial implements ArmorMaterial {
 
-    public static final BlackBearClothesMaterial MATERIAL = new BlackBearClothesMaterial();
+    public static final CottonClothesMaterial MATERIAL = new CottonClothesMaterial();
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
@@ -35,12 +35,12 @@ public class BlackBearClothesMaterial implements ArmorMaterial {
 
     @Override
     public @NotNull Ingredient getRepairIngredient() {
-        return Ingredient.of(new ItemStack(TextileItems.BLACK_BEAR_FUR.get(), 1));
+        return Ingredient.of(new ItemStack(TextileItems.COTTON_CLOTH.get(), 1));
     }
 
     @Override
     public @NotNull String getName() {
-        return "textile:blackbear_fur";
+        return "textile:cotton_cloth";
     }
 
     @Override
