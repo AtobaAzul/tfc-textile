@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "textile:wool_hat",
+    "textile:linen_hat",
+    "textile:cotton_hat",
+    "textile:burlap_hat",
+    "textile:silk_hat",
+    "textile:wool_shirt",
+    "textile:linen_shirt",
+    "textile:cotton_shirt",
+    "textile:burlap_shirt",
+    "textile:silk_shirt",
+    "textile:wool_pants",
+    "textile:linen_pants",
+    "textile:cotton_pants",
+    "textile:burlap_pants",
+    "textile:silk_pants"
+  ]
+}

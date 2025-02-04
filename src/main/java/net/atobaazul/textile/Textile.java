@@ -36,6 +36,7 @@ public class Textile {
     public Textile() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+
         TextileItems.register(bus);
         TextileCreativeModeTabs.TABS.register(bus);
         ModLootModifiers.register(bus);
