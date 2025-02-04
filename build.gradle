@@ -137,7 +137,7 @@ dependencies {
     implementation fg.deobf("curse.maven:jei-238222:4712868")
     implementation fg.deobf("curse.maven:curios-${curios_version}")
     implementation fg.deobf("curse.maven:patchouli-${patchouli_version}")
-    implementation fg.deobf("curse.maven:firmalife-${firmalife_version}")
+    //implementation fg.deobf("curse.maven:firmalife-${firmalife_version}") Don't really need firmalife do we?
     implementation fg.deobf("curse.maven:jade-${jade_version}")
     implementation fg.deobf("curse.maven:cold-sweat-${cold_sweat_version}")
     implementation fg.deobf("curse.maven:tfc-cold-sweat-${tfc_cold_sweat_version}")
