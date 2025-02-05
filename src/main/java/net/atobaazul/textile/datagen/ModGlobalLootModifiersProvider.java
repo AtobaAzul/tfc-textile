@@ -39,8 +39,6 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
-
-
         FUR_DEFS.forEach((k, v) -> {
             add(k + "_fur_add", new AddItemModifier(new LootItemCondition[]{
                     new LootTableIdCondition.Builder(new ResourceLocation("tfc:entities/" + k)).build()}, v));

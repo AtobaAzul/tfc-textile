@@ -10,8 +10,12 @@ import net.atobaazul.textile.registries.TextileCreativeModeTabs;
 import net.atobaazul.textile.registries.TextileItems;
 import net.atobaazul.textile.worldgen.TextileFeatures;
 import net.dries007.tfc.common.TFCCreativeTabs;
+import net.minecraft.client.color.item.ItemColor;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.DyeableLeatherItem;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -66,10 +70,6 @@ public class Textile {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-
-        }
-
         if (event.getTab() == TFCCreativeTabs.EARTH.tab().get()) {
             event.accept(TextileBlocks.WILD_CROPS.get(TextileCrop.COTTON));
             event.accept(TextileBlocks.WILD_CROPS.get(TextileCrop.FLAX));
@@ -82,6 +82,10 @@ public class Textile {
 
     }
 
+
+
+
+
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
@@ -90,6 +94,19 @@ public class Textile {
             /*CuriosRendererRegistry.register(TFCTextileItems.SILK_PANTS.get(), RenderCurio::new);
             CuriosRendererRegistry.register(TFCTextileItems.SILK_SHIRT.get(), RenderCurio::new);
             CuriosRendererRegistry.register(TFCTextileItems.SILK_HAT.get(), RenderCurio::new);*/
+        }
+
+        @SubscribeEvent
+        public static void registerColorHandlers(RegisterColorHandlersEvent.Item event)
+        {
+            event.register( //Not sure what the tint index here does. Copied this from some example in GitHub.
+                    (stack, tintIndex) -> tintIndex > 0 ? -1 : ((DyeableLeatherItem) stack.getItem()).getColor(stack),
+                    TextileItems.LINEN_HAT.get(), TextileItems.LINEN_SHIRT.get(), TextileItems.LINEN_PANTS.get(),
+                    TextileItems.COTTON_HAT.get(), TextileItems.COTTON_SHIRT.get(), TextileItems.COTTON_PANTS.get(),
+                    TextileItems.BURLAP_HAT.get(), TextileItems.BURLAP_SHIRT.get(), TextileItems.BURLAP_PANTS.get(),
+                    TextileItems.SILK_HAT.get(), TextileItems.SILK_SHIRT.get(), TextileItems.SILK_PANTS.get(),
+                    TextileItems.WOOL_HAT.get(), TextileItems.WOOL_SHIRT.get(), TextileItems.WOOL_PANTS.get()
+            );
         }
     }
 }

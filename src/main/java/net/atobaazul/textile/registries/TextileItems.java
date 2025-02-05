@@ -4,6 +4,9 @@ import net.atobaazul.textile.Textile;
 import net.atobaazul.textile.TextileHelpers;
 import net.atobaazul.textile.block.TextileBlocks;
 import net.atobaazul.textile.crop.TextileCrop;
+import net.atobaazul.textile.item.armor.DyeableBurlapClothingItem;
+import net.atobaazul.textile.item.armor.DyeableLinenClothingItem;
+import net.atobaazul.textile.item.armor.DyeableWhiteClothingItem;
 import net.atobaazul.textile.item.armor.material.*;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.DyeableArmorItem;
@@ -51,29 +54,29 @@ public class TextileItems {
 
 
     //cotton clothes
-    public static final RegistryObject<Item> COTTON_HAT = ITEMS.register("cotton_hat", () -> new DyeableArmorItem(CottonClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
-    public static final RegistryObject<Item> COTTON_SHIRT = ITEMS.register("cotton_shirt", () -> new DyeableArmorItem(CottonClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
-    public static final RegistryObject<Item> COTTON_PANTS = ITEMS.register("cotton_pants", () -> new DyeableArmorItem(CottonClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
+    public static final RegistryObject<Item> COTTON_HAT = ITEMS.register("cotton_hat", () -> new DyeableWhiteClothingItem(CottonClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
+    public static final RegistryObject<Item> COTTON_SHIRT = ITEMS.register("cotton_shirt", () -> new DyeableWhiteClothingItem(CottonClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
+    public static final RegistryObject<Item> COTTON_PANTS = ITEMS.register("cotton_pants", () -> new DyeableWhiteClothingItem(CottonClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
 
     //Wool
-    public static final RegistryObject<Item> WOOL_HAT = ITEMS.register("wool_hat", () -> new DyeableArmorItem(WoolClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
-    public static final RegistryObject<Item> WOOL_SHIRT = ITEMS.register("wool_shirt", () -> new DyeableArmorItem(WoolClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
-    public static final RegistryObject<Item> WOOL_PANTS = ITEMS.register("wool_pants", () -> new DyeableArmorItem(WoolClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
+    public static final RegistryObject<Item> WOOL_HAT = ITEMS.register("wool_hat", () -> new DyeableWhiteClothingItem(WoolClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
+    public static final RegistryObject<Item> WOOL_SHIRT = ITEMS.register("wool_shirt", () -> new DyeableWhiteClothingItem(WoolClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
+    public static final RegistryObject<Item> WOOL_PANTS = ITEMS.register("wool_pants", () -> new DyeableWhiteClothingItem(WoolClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
 
     //Burlap
-    public static final RegistryObject<Item> BURLAP_HAT = ITEMS.register("burlap_hat", () -> new DyeableArmorItem(BurlapClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
-    public static final RegistryObject<Item> BURLAP_SHIRT = ITEMS.register("burlap_shirt", () -> new DyeableArmorItem(BurlapClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
-    public static final RegistryObject<Item> BURLAP_PANTS = ITEMS.register("burlap_pants", () -> new DyeableArmorItem(BurlapClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
+    public static final RegistryObject<Item> BURLAP_HAT = ITEMS.register("burlap_hat", () -> new DyeableBurlapClothingItem(BurlapClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
+    public static final RegistryObject<Item> BURLAP_SHIRT = ITEMS.register("burlap_shirt", () -> new DyeableBurlapClothingItem(BurlapClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
+    public static final RegistryObject<Item> BURLAP_PANTS = ITEMS.register("burlap_pants", () -> new DyeableBurlapClothingItem(BurlapClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
 
     //Silk
-    public static final RegistryObject<Item> SILK_HAT = ITEMS.register("silk_hat", () -> new DyeableArmorItem(SilkClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
-    public static final RegistryObject<Item> SILK_SHIRT = ITEMS.register("silk_shirt", () -> new DyeableArmorItem(SilkClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
-    public static final RegistryObject<Item> SILK_PANTS = ITEMS.register("silk_pants", () -> new DyeableArmorItem(SilkClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
+    public static final RegistryObject<Item> SILK_HAT = ITEMS.register("silk_hat", () -> new DyeableWhiteClothingItem(SilkClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
+    public static final RegistryObject<Item> SILK_SHIRT = ITEMS.register("silk_shirt", () -> new DyeableWhiteClothingItem(SilkClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
+    public static final RegistryObject<Item> SILK_PANTS = ITEMS.register("silk_pants", () -> new DyeableWhiteClothingItem(SilkClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
 
     //linen clothes
-    public static final RegistryObject<Item> LINEN_HAT = ITEMS.register("linen_hat", () -> new DyeableArmorItem(LinenClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
-    public static final RegistryObject<Item> LINEN_SHIRT = ITEMS.register("linen_shirt", () -> new DyeableArmorItem(LinenClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
-    public static final RegistryObject<Item> LINEN_PANTS = ITEMS.register("linen_pants", () -> new DyeableArmorItem(LinenClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
+    public static final RegistryObject<Item> LINEN_HAT = ITEMS.register("linen_hat", () -> new DyeableLinenClothingItem(LinenClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
+    public static final RegistryObject<Item> LINEN_SHIRT = ITEMS.register("linen_shirt", () -> new DyeableLinenClothingItem(LinenClothesMaterial.MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(80)));
+    public static final RegistryObject<Item> LINEN_PANTS = ITEMS.register("linen_pants", () -> new DyeableLinenClothingItem(LinenClothesMaterial.MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1).durability(75)));
 
     //crocodile clothes
     public static final RegistryObject<Item> CROCODILE_HAT = ITEMS.register("crocodile_hat", () -> new ArmorItem(CrocodileLeatherClothesMaterial.MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1).durability(60)));
