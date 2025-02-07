@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "textile:caribou_hat",
+    "textile:polar_bear_hat",
+    "textile:direwolf_hat",
+    "textile:grizzly_bear_hat",
+    "textile:black_bear_hat",
+    "textile:cougar_hat",
+    "textile:lion_hat",
+    "textile:tiger_hat",
+    "textile:crocodile_hat",
+    "textile:sabertooth_hat",
+    "textile:panther_hat",
+    "textile:cotton_hat",
+    "textile:wool_hat",
+    "textile:silk_hat",
+    "textile:burlap_hat",
+    "textile:linen_hat",
+    "textile:raw_hat"
+  ]
+}

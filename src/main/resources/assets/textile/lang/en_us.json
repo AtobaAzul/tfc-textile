@@ -88,6 +88,23 @@
   "block.textile.wild_crop.flax": "Wild Flax",
   "block.textile.wild_crop.cotton": "Wild Cotton",
   "block.textile.dead_crop.flax": "Dead Flax",
-  "block.textile.dead_crop.cotton": "Dead Flax"
+  "block.textile.dead_crop.cotton": "Dead Flax",
+
+  "tfc.recipe.barrel.textile.dyeing.clothing_black": "Dyeing Clothing Black",
+  "tfc.recipe.barrel.textile.dyeing.clothing_blue": "Dyeing Clothing Blue",
+  "tfc.recipe.barrel.textile.dyeing.clothing_brown": "Dyeing Clothing Brown",
+  "tfc.recipe.barrel.textile.dyeing.clothing_cyan": "Dyeing Clothing Cyan",
+  "tfc.recipe.barrel.textile.dyeing.clothing_gray": "Dyeing Clothing Gray",
+  "tfc.recipe.barrel.textile.dyeing.clothing_green": "Dyeing Clothing Green",
+  "tfc.recipe.barrel.textile.dyeing.clothing_light_blue": "Dyeing Clothing Light Blue",
+  "tfc.recipe.barrel.textile.dyeing.clothing_light_gray": "Dyeing Clothing Light Gray",
+  "tfc.recipe.barrel.textile.dyeing.clothing_lime": "Dyeing Clothing Lime",
+  "tfc.recipe.barrel.textile.dyeing.clothing_magenta": "Dyeing Clothing Magenta",
+  "tfc.recipe.barrel.textile.dyeing.clothing_orange": "Dyeing Clothing Orange",
+  "tfc.recipe.barrel.textile.dyeing.clothing_pink": "Dyeing Clothing Pink",
+  "tfc.recipe.barrel.textile.dyeing.clothing_purple": "Dyeing Clothing Purple",
+  "tfc.recipe.barrel.textile.dyeing.clothing_red": "Dyeing Clothing Red",
+  "tfc.recipe.barrel.textile.dyeing.clothing_white": "Dyeing Clothing White",
+  "tfc.recipe.barrel.textile.dyeing.clothing_yellow": "Dyeing Clothing Yellow"
 
 }

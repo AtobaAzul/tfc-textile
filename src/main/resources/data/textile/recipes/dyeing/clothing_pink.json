@@ -1,0 +1,25 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": [
+      {
+        "tag": "textile:dyeable_clothes"
+      }
+    ]
+  },
+  "input_fluid": {
+    "ingredient": "tfc:pink_dye",
+    "amount": 25
+  },
+  "output_item": {
+    "modifiers": [
+      "tfc:copy_input",
+      {
+        "type": "tfc:dye_leather",
+        "color": "pink"
+      }
+    ]
+  },
+  "duration": 1000
+}
