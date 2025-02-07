@@ -2,7 +2,7 @@ package net.atobaazul.textile.block;
 
 import net.atobaazul.textile.TextileHelpers;
 import net.atobaazul.textile.crop.TextileCrop;
-import net.atobaazul.textile.registries.TextileItems;
+import net.atobaazul.textile.item.TextileItems;
 import net.dries007.tfc.util.registry.RegistrationHelpers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;

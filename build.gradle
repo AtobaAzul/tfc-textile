@@ -20,6 +20,7 @@ buildscript {
 }
 
 
+
 plugins {
     id 'eclipse'
     id 'idea'
@@ -99,12 +100,13 @@ repositories {
     mavenCentral()
 
     maven {
-        url = 'https://repo.spongepowered.org/maven'
-    }
+        url = 'https://repo.spongepowered.org/maven' }
     maven {
         url "https://repo.spongepowered.org/repository/maven-public/"
-        content { includeGroup "org.spongepowered" }
-    }
+        content { includeGroup "org.spongepowered" } }
+
+
+
 
 
     maven { url = "https://dvs1.progwml6.com/files/maven/" } // JEI
@@ -122,20 +124,27 @@ repositories {
     }
 
 
+
+
+
+
 }
 
 dependencies {
 
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf("curse.maven:terrafirmacraft-${tfc_version}")
+    implementation fg.deobf("curse.maven:terrafirmacraft-302973:5943050")
     implementation fg.deobf("curse.maven:jei-238222:4712868")
-    implementation fg.deobf("curse.maven:curios-${curios_version}")
-    implementation fg.deobf("curse.maven:patchouli-${patchouli_version}")
-    //implementation fg.deobf("curse.maven:firmalife-${firmalife_version}") Don't really need firmalife do we?
-    implementation fg.deobf("curse.maven:jade-${jade_version}")
-    implementation fg.deobf("curse.maven:cold-sweat-${cold_sweat_version}")
-    implementation fg.deobf("curse.maven:tfc-cold-sweat-${tfc_cold_sweat_version}")
+    implementation fg.deobf("curse.maven:curios-309927:5843594")
+    implementation fg.deobf("curse.maven:patchouli-306770:4966125")
+    implementation fg.deobf("curse.maven:firmalife-453394:5477629")
+    implementation fg.deobf("curse.maven:jade-324717:5640610")
+    implementation fg.deobf("curse.maven:cold-sweat-506194:5858997")
+    implementation fg.deobf("curse.maven:tfc-cold-sweat-1130934:5858347")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+
+
 
 
     // Specify the version of Minecraft to use.
@@ -168,11 +177,13 @@ dependencies {
 // When "copyIdeResources" is enabled, this will also run before the game launches in IDE environments.
 // See https://docs.gradle.org/current/dsl/org.gradle.language.jvm.tasks.ProcessResources.html
 tasks.named('processResources', ProcessResources).configure {
-    var replaceProperties = [minecraft_version   : minecraft_version, minecraft_version_range: minecraft_version_range,
-                             forge_version       : forge_version, forge_version_range: forge_version_range,
-                             loader_version_range: loader_version_range,
-                             mod_id              : mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
-                             mod_authors         : mod_authors, mod_description: mod_description,]
+    var replaceProperties = [
+            minecraft_version: minecraft_version, minecraft_version_range: minecraft_version_range,
+            forge_version: forge_version, forge_version_range: forge_version_range,
+            loader_version_range: loader_version_range,
+            mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
+            mod_authors: mod_authors, mod_description: mod_description,
+    ]
     inputs.properties replaceProperties
 
     filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
@@ -183,13 +194,15 @@ tasks.named('processResources', ProcessResources).configure {
 // Example for how to get properties into the manifest for reading at runtime.
 tasks.named('jar', Jar).configure {
     manifest {
-        attributes(['Specification-Title'     : mod_id,
-                    'Specification-Vendor'    : mod_authors,
-                    'Specification-Version'   : '1', // We are version 1 of ourselves
-                    'Implementation-Title'    : project.name,
-                    'Implementation-Version'  : project.jar.archiveVersion,
-                    'Implementation-Vendor'   : mod_authors,
-                    'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")])
+        attributes([
+                'Specification-Title'     : mod_id,
+                'Specification-Vendor'    : mod_authors,
+                'Specification-Version'   : '1', // We are version 1 of ourselves
+                'Implementation-Title'    : project.name,
+                'Implementation-Version'  : project.jar.archiveVersion,
+                'Implementation-Vendor'   : mod_authors,
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
     }
 
     // This is the preferred method to reobfuscate your jar file
@@ -223,4 +236,6 @@ mixin {
     // MixinGradle Settings
     add sourceSets.main, 'textile.refmap.json'
     config 'textile.mixins.json'
+
+
 }

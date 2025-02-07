@@ -1,7 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "textile:item/cotton_hat",
-    "layer1": "textile:item/cotton_hat_overlay"
+    "layer0": "textile:item/cotton_hat"
   }
 }

@@ -1,7 +1,7 @@
 package net.atobaazul.textile.crop;
 
 import net.atobaazul.textile.block.TextileBlocks;
-import net.atobaazul.textile.registries.TextileItems;
+import net.atobaazul.textile.item.TextileItems;
 import net.dries007.tfc.common.blockentities.CropBlockEntity;
 import net.dries007.tfc.common.blockentities.FarmlandBlockEntity;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
