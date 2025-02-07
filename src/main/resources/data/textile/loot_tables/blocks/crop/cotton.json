@@ -22,7 +22,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "type": "tfc:crop_yield_uniform",
+                "type": "textile:crop_yield_uniform",
                 "min": 0,
                 "max": {
                   "type": "minecraft:uniform",

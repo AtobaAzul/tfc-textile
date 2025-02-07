@@ -8,6 +8,7 @@ import net.atobaazul.textile.crop.TextileCrop;
 import net.atobaazul.textile.loot.ModLootModifiers;
 import net.atobaazul.textile.registries.TextileCreativeModeTabs;
 import net.atobaazul.textile.registries.TextileItems;
+import net.atobaazul.textile.util.TextileLoot;
 import net.atobaazul.textile.worldgen.TextileFeatures;
 import net.dries007.tfc.common.TFCCreativeTabs;
 import net.minecraft.client.color.item.ItemColor;
@@ -47,6 +48,9 @@ public class Textile {
         TextileBlocks.BLOCKS.register(bus);
         TextileFeatures.FEATURES.register(bus);
 
+        TextileLoot.CONDITIONS.register(bus);
+        TextileLoot.LOOT_FUNCTIONS.register(bus);
+        TextileLoot.NUMBER_PROVIDERS.register(bus);
 
         // Register the commonSetup method for modloading
         bus.addListener(this::commonSetup);
