@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "textile:caribou_shirt",
+    "textile:polar_bear_shirt",
+    "textile:direwolf_shirt",
+    "textile:grizzly_bear_shirt",
+    "textile:black_bear_shirt",
+    "textile:cougar_shirt",
+    "textile:lion_shirt",
+    "textile:tiger_shirt",
+    "textile:crocodile_shirt",
+    "textile:sabertooth_shirt",
+    "textile:panther_shirt",
+    "textile:cotton_shirt",
+    "textile:wool_shirt",
+    "textile:silk_shirt",
+    "textile:burlap_shirt",
+    "textile:linen_shirt",
+    "textile:raw_shirt"
+  ]
+}

@@ -32,9 +32,9 @@ public final class TextileBlockEntities {
 
     private static <T extends BlockEntity> RegistryObject<BlockEntityType<T>> register(String name, BlockEntityType.BlockEntitySupplier<T> factory, Stream<? extends Supplier<? extends Block>> blocks) {
         return RegistrationHelpers.register(BLOCK_ENTITIES, name, factory, blocks);
-    }    public static final RegistryObject<BlockEntityType<TextileCropBlockEntity>> CROP = register("crop", TextileCropBlockEntity::new, TextileBlocks.CROPS.values().stream());
+    }
 
-
+    public static final RegistryObject<BlockEntityType<TextileCropBlockEntity>> CROP = register("crop", TextileCropBlockEntity::new, TextileBlocks.CROPS.values().stream());
 
 
 }

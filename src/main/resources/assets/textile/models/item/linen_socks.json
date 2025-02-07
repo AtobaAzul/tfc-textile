@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "textile:item/linen_socks"
+    "layer0": "textile:item/linen_socks",
+    "layer1": "textile:item/linen_socks_overlay"
   }
 }
