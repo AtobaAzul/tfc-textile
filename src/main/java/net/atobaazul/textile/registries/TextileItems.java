@@ -9,7 +9,6 @@ import net.atobaazul.textile.item.armor.DyeableLinenClothingItem;
 import net.atobaazul.textile.item.armor.DyeableWhiteClothingItem;
 import net.atobaazul.textile.item.armor.material.*;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.DyeableArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;

@@ -25,37 +25,32 @@ import net.minecraftforge.registries.RegistryObject;
 import static net.atobaazul.textile.Textile.MOD_ID;
 
 
-public class TextileLoot
-{
+public class TextileLoot {
     public static final DeferredRegister<LootItemConditionType> CONDITIONS = DeferredRegister.create(Registries.LOOT_CONDITION_TYPE, MOD_ID);
     public static final DeferredRegister<LootNumberProviderType> NUMBER_PROVIDERS = DeferredRegister.create(Registries.LOOT_NUMBER_PROVIDER_TYPE, MOD_ID);
     public static final DeferredRegister<LootItemFunctionType> LOOT_FUNCTIONS = DeferredRegister.create(Registries.LOOT_FUNCTION_TYPE, MOD_ID);
 
     public static final RegistryObject<LootNumberProviderType> CROP_YIELD = numberProvider("crop_yield_uniform", new MinMaxProvider.Serializer(TextileCropYieldProvider::new));
 
-    private static RegistryObject<LootItemFunctionType> lootFunction(String id, Serializer<? extends LootItemFunction> serializer)
-    {
+    private static RegistryObject<LootItemFunctionType> lootFunction(String id, Serializer<? extends LootItemFunction> serializer) {
         return LOOT_FUNCTIONS.register(id, () -> new LootItemFunctionType(serializer));
     }
 
-    private static RegistryObject<LootItemConditionType> lootCondition(String id, Serializer<? extends LootItemCondition> serializer)
-    {
+    private static RegistryObject<LootItemConditionType> lootCondition(String id, Serializer<? extends LootItemCondition> serializer) {
         return CONDITIONS.register(id, () -> new LootItemConditionType(serializer));
     }
 
-    private static RegistryObject<LootNumberProviderType> numberProvider(String id, Serializer<? extends NumberProvider> serializer)
-    {
+    private static RegistryObject<LootNumberProviderType> numberProvider(String id, Serializer<? extends NumberProvider> serializer) {
         return NUMBER_PROVIDERS.register(id, () -> new LootNumberProviderType(serializer));
     }
 
-    public record InstanceSerializer<T extends LootItemCondition>(T instance) implements Serializer<T>
-    {
+    public record InstanceSerializer<T extends LootItemCondition>(T instance) implements Serializer<T> {
         @Override
-        public void serialize(JsonObject json, T value, JsonSerializationContext context) { }
+        public void serialize(JsonObject json, T value, JsonSerializationContext context) {
+        }
 
         @Override
-        public T deserialize(JsonObject json, JsonDeserializationContext context)
-        {
+        public T deserialize(JsonObject json, JsonDeserializationContext context) {
             return instance;
         }
     }
