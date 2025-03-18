@@ -1,12 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "AAA",
-    "A A"
+    "ABA",
+    "B B"
   ],
   "key": {
     "A": {
       "item": "tfc:wool_cloth"
+    },
+    "B": {
+      "tag": "forge:string"
     }
   },
   "result": {

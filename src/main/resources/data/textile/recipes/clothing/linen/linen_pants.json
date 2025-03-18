@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "AAA",
+    "BAB",
     "A A",
-    "A A"
+    "B B"
   ],
   "key": {
     "A": {
       "item": "textile:linen_cloth"
+    },
+    "B": {
+      "tag": "forge:string"
     }
   },
   "result": {
