@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "textile:item/wool_hat",
-    "layer1": "textile:item/wool_hat_overlay"
-  }
-}

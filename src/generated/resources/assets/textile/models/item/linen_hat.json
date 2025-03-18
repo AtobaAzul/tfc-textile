@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "textile:item/linen_hat",
+    "layer1": "textile:item/linen_hat_overlay"
+  }
+}

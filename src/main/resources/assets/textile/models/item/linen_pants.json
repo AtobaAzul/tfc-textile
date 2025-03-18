@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "textile:item/linen_pants",
-    "layer1": "textile:item/linen_pants_overlay"
-  }
-}
