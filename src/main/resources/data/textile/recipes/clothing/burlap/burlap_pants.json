@@ -9,9 +9,14 @@
     "A": {
       "item": "tfc:burlap_cloth"
     },
-    "B": {
-      "tag": "forge:string"
-    }
+    "B": [
+      {
+        "item": "tfc:jute_fiber"
+      },
+      {
+        "tag": "forge:string"
+      }
+    ]
   },
   "result": {
     "item": "textile:burlap_pants"

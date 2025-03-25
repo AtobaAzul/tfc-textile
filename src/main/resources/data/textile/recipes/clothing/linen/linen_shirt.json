@@ -9,9 +9,14 @@
     "A": {
       "item": "textile:linen_cloth"
     },
-    "B": {
-      "tag": "forge:string"
-    }
+    "B": [
+      {
+        "item": "textile:flax_fiber"
+      },
+      {
+        "tag": "forge:string"
+      }
+    ]
   },
   "result": {
     "item": "textile:linen_shirt"
