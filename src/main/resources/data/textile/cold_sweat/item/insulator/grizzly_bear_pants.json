@@ -4,7 +4,7 @@
     "heat": 2,
     "cold": 7
   },
-  "item": {
+  "data": {
     "items": [
       "textile:grizzly_bear_pants"
     ]

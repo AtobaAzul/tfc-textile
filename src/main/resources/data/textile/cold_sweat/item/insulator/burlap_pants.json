@@ -4,7 +4,7 @@
     "heat": 4,
     "cold": 4
   },
-  "item": {
+  "data": {
     "items": [
       "textile:burlap_pants"
     ]

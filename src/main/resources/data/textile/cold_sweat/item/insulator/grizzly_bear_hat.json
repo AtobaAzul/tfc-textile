@@ -4,7 +4,7 @@
     "heat": 1,
     "cold": 6
   },
-  "item": {
+  "data": {
     "items": [
       "textile:grizzly_bear_hat"
     ]

@@ -4,7 +4,7 @@
     "heat": 5,
     "cold": 2
   },
-  "item": {
+  "data": {
     "items": [
       "textile:silk_hat"
     ]

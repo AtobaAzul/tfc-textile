@@ -4,7 +4,7 @@
     "heat": 4,
     "cold": 0
   },
-  "item": {
+  "data": {
     "items": [
       "textile:linen_cloth"
     ]

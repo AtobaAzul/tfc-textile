@@ -4,7 +4,7 @@
     "heat": 8,
     "cold": 2
   },
-  "item": {
+  "data": {
     "items": [
       "textile:crocodile_hat"
     ]
