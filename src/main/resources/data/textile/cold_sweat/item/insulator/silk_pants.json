@@ -1,8 +1,8 @@
 {
   "type": "armor",
   "insulation": {
-    "heat": 6,
-    "cold": 3
+    "value": 14,
+    "adapt_speed": 0.0085
   },
   "item": {
     "items": [

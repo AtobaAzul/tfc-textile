@@ -1,8 +1,8 @@
 {
   "type": "armor",
   "insulation": {
-    "heat": 2,
-    "cold": 8
+    "heat": 7,
+    "cold": 13
   },
   "item": {
     "items": [
