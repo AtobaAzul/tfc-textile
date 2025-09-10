@@ -14,7 +14,7 @@ public class LinenClothesMaterial implements ArmorMaterial {
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
-        return 3000;
+        return 300;
     }
 
     @Override

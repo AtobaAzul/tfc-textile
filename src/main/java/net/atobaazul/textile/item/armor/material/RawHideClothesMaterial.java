@@ -15,7 +15,7 @@ public class RawHideClothesMaterial implements ArmorMaterial {
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
-        return 1500;
+        return 150;
     }
 
     @Override

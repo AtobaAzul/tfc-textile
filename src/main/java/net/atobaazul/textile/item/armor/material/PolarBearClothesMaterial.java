@@ -15,13 +15,28 @@ public class PolarBearClothesMaterial implements ArmorMaterial {
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
-        return 4000;
+        return 400;
+    }
+
+    private int getDefenseForSlot(int slotNum) {
+        return switch (slotNum) {
+            case 0 -> // helmet
+                    1;
+            case 1 -> //chestplate
+                    3;
+            case 2 -> //leggings
+                    2;
+            case 3 -> //boots
+                    1;
+            default -> 0;
+        };
     }
 
     @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return 2;
+        return getDefenseForSlot(pType.ordinal());
     }
+
 
     @Override
     public int getEnchantmentValue() {
