@@ -1,0 +1,18 @@
+{
+  "entries": [
+    "textile:black_bear_replace_hide_drops",
+    "textile:caribou_replace_hide_drops",
+    "textile:cougar_replace_hide_drops",
+    "textile:crocodile_replace_hide_drops",
+    "textile:direwolf_replace_hide_drops",
+    "textile:grizzly_bear_replace_hide_drops",
+    "textile:lion_replace_hide_drops",
+    "textile:panther_replace_hide_drops",
+    "textile:polar_bear_replace_hide_drops",
+    "textile:sabertooth_replace_hide_drops",
+    "textile:tiger_replace_hide_drops",
+    "textile:bison_replace_hide_drops",
+    "textile:yak_replace_hide_drops"
+  ],
+  "replace": false
+}

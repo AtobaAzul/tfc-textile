@@ -1,0 +1,10 @@
+{
+  "type": "textile:replace_hide",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "tfc:entities/cougar"
+    }
+  ],
+  "item": "textile:cougar_fur"
+}
