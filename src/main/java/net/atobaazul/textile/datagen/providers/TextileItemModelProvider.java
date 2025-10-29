@@ -1,5 +1,6 @@
 package net.atobaazul.textile.datagen.providers;
 
+import net.atobaazul.tfc_coldsweat.TFCColdSweat;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -35,11 +36,28 @@ public class TextileItemModelProvider extends ItemModelProvider {
         BISON_CLOTHES.forEach(this::simpleItem);
         YAK_CLOTHES.forEach(this::simpleItem);
 
+        LINEN_CLOTHES.forEach(this::simpleItem);
+        COTTON_CLOTHES.forEach(this::simpleItem);
+
         FURS.forEach(this::simpleItem);
         simpleItem(PRIMITIVE_INSULATION);
+        simpleItem(COTTON_BALL);
+        simpleItem(COTTON_STRING);
+        simpleItem(COTTON_CLOTH);
+        simpleItem(FLAX);
+        simpleItem(FLAX_FIBER);
+        simpleItem(LINEN_CLOTH);
+
     }
 
     private ItemModelBuilder simpleItem(DeferredItem<Item> item) {
         return withExistingParent(item.getId().getPath(), ResourceLocation.fromNamespaceAndPath("minecraft", "item/generated")).texture("layer0", ResourceLocation.fromNamespaceAndPath(MOD_ID, "item/"+item.getId().getPath()));
+    }
+
+    private void dyeableItem(DeferredItem<Item> item) {
+        withExistingParent(item.getId().getPath(), ResourceLocation.fromNamespaceAndPath("minecraft", "item/generated"))
+                .texture("layer0", ResourceLocation.fromNamespaceAndPath(TFCColdSweat.MOD_ID, "item/" + item.getId().getPath()))
+                .texture("layer1", ResourceLocation.fromNamespaceAndPath(TFCColdSweat.MOD_ID, "item/" + item.getId().getPath() + "_overlay"));
+
     }
 }

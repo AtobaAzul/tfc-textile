@@ -1,0 +1,14 @@
+{
+  "type": "tfc:knapping",
+  "knapping_type": "textile:raw_hide",
+  "pattern": [
+    "X   X",
+    "XXXXX",
+    "XXXXX",
+    "XXXXX",
+    "XXXXX"
+  ],
+  "result": {
+    "id": "textile:raw_chestplate"
+  }
+}

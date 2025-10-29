@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "heat": -9,
+    "cold": 14
+  },
+  "item": {
+    "items": [
+      "textile:caribou_chestplate"
+    ]
+  }
+}

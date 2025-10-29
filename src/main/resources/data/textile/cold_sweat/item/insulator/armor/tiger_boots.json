@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "heat": 8,
+    "cold": 11
+  },
+  "item": {
+    "items": [
+      "textile:tiger_boots"
+    ]
+  }
+}

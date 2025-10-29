@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:strings"
+    },
+    "B": {
+      "item": "textile:direwolf_fur"
+    },
+    "C": {
+      "item": "minecraft:leather_boots"
+    }
+  },
+  "result": {
+    "id": "textile:direwolf_boots"
+  }
+}

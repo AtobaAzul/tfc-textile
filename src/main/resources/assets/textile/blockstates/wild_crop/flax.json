@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "part=top,mature=true": {
+      "model": "textile:block/wild_crop/wild_flax_top"
+    },
+    "part=top,mature=false": {
+      "model": "textile:block/wild_crop/dead_wild_flax_top"
+    },
+    "part=bottom,mature=true": {
+      "model": "textile:block/wild_crop/wild_flax_bottom"
+    },
+    "part=bottom,mature=false": {
+      "model": "textile:block/wild_crop/dead_wild_flax_bottom"
+    }
+  }
+}

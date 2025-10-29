@@ -1,0 +1,35 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "age=0": {
+      "model": "textile:block/crop/cotton_1"
+    },
+    "age=1": {
+      "model": "textile:block/crop/cotton_2"
+    },
+    "age=2,part=bottom": {
+      "model": "textile:block/crop/cotton_3_bottom"
+    },
+    "age=2,part=top": {
+      "model": "textile:block/crop/cotton_3_top"
+    },
+    "age=3,part=bottom": {
+      "model": "textile:block/crop/cotton_4_bottom"
+    },
+    "age=4,part=bottom": {
+      "model": "textile:block/crop/cotton_5_bottom"
+    },
+    "age=5,part=bottom": {
+      "model": "textile:block/crop/cotton_bottom"
+    },
+    "age=3,part=top": {
+      "model": "textile:block/crop/cotton_4_top"
+    },
+    "age=4,part=top": {
+      "model": "textile:block/crop/cotton_5_top"
+    },
+    "age=5,part=top": {
+      "model": "textile:block/crop/cotton_top"
+    }
+  }
+}

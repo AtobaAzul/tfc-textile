@@ -1,0 +1,29 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "age=0": {
+      "model": "textile:block/crop/flax_1"
+    },
+    "age=1": {
+      "model": "textile:block/crop/flax_2"
+    },
+    "age=2,part=bottom": {
+      "model": "textile:block/crop/flax_3_bottom"
+    },
+    "age=2,part=top": {
+      "model": "textile:block/crop/flax_3_top"
+    },
+    "age=3,part=bottom": {
+      "model": "textile:block/crop/flax_4_bottom"
+    },
+    "age=4,part=bottom": {
+      "model": "textile:block/crop/flax_bottom"
+    },
+    "age=3,part=top": {
+      "model": "textile:block/crop/flax_4_top"
+    },
+    "age=4,part=top": {
+      "model": "textile:block/crop/flax_top"
+    }
+  }
+}

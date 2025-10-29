@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "B B"
+  ],
+  "key": {
+    "A": {
+      "item": "textile:cotton_cloth"
+    },
+    "B": {
+      "tag": "c:strings"
+    }
+  },
+  "result": {
+    "id": "textile:cotton_helmet"
+  }
+}

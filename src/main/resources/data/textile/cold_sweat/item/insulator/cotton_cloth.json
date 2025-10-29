@@ -1,0 +1,12 @@
+{
+  "type": "item",
+  "insulation": {
+    "heat": 1,
+    "cold": 3
+  },
+  "item": {
+    "items": [
+      "textile:cotton_cloth"
+    ]
+  }
+}

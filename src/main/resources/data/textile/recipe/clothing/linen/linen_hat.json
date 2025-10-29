@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "B B"
+  ],
+  "key": {
+    "A": {
+      "item": "textile:linen_cloth"
+    },
+    "B": [
+      {
+        "item": "textile:flax_fiber"
+      },
+      {
+        "tag": "c:strings"
+      }
+    ]
+  },
+  "result": {
+    "id": "textile:linen_helmet"
+  }
+}

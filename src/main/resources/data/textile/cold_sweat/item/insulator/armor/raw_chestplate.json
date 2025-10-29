@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "heat": 6,
+    "cold": 6
+  },
+  "item": {
+    "items": [
+      "textile:raw_chestplate"
+    ]
+  }
+}
