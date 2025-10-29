@@ -86,5 +86,7 @@
   "block.textile.wild_crop.cotton": "Wild Cotton",
   "block.textile.dead_crop.flax": "Dead Flax",
   "block.textile.dead_crop.cotton": "Dead Cotton",
-  "tfc.recipe.barrel.textile.flax_fiber": "Flax Fiber"
+  "tfc.recipe.barrel.textile.flax_fiber": "Flax Fiber",
+  "itemGroup.textile.clothing": "Textile: Clothing",
+  "itemGroup.textile.resources": "Textile: Resources"
 }

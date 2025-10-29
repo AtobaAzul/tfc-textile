@@ -1,5 +1,6 @@
 package net.atobaazul.textile;
 
+import net.atobaazul.textile.registries.TextileCreativeTabs;
 import net.atobaazul.textile.registries.TextileItems;
 import net.atobaazul.textile.registries.TextileLootModifiers;
 import net.atobaazul.textile.registries.TextileMaterials;
@@ -28,6 +29,7 @@ public class Textile {
         TextileItems.ITEMS.register(bus);
         TextileLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(bus);
         TextileMaterials.MATERIALS.register(bus);
+        TextileCreativeTabs.CREATIVE_MODE_TABS.register(bus);
 
         bus.addListener(this::registerColorHandler);
     }
