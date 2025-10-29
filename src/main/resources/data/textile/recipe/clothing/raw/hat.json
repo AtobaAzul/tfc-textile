@@ -1,6 +1,6 @@
 {
   "type": "tfc:knapping",
-  "knapping_type": "textile:raw_hide",
+  "knapping_type": "textile:primitive_insulation",
   "pattern": [
     "XXXXX",
     "X   X",

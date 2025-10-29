@@ -5,6 +5,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -64,6 +65,8 @@ public class TextileItems {
     public final static List<DeferredItem<Item>> LINEN_CLOTHES = armorSetWithoutBoots("linen", LINEN_MATERIAL);
     public final static List<DeferredItem<Item>> COTTON_CLOTHES = armorSetWithoutBoots("cotton", COTTON_MATERIAL);
 
+    public static final DeferredItem<ItemNameBlockItem> FLAX_SEEDS = ITEMS.register("seeds/flax", ()-> new ItemNameBlockItem(TextileBlocks.FLAX_CROP.get(), new Item.Properties()));
+    public static final DeferredItem<ItemNameBlockItem> COTTON_SEEDS = ITEMS.register("seeds/cotton", ()-> new ItemNameBlockItem(TextileBlocks.FLAX_CROP.get(), new Item.Properties()));
 
 
     //creates a helmet, chestplate, leggings and boots for an armor set of a given material

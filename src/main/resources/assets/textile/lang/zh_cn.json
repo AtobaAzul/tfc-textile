@@ -81,7 +81,7 @@
     "item.textile.wool_helmet": "羊毛帽",
     "item.textile.silk_helmet": "丝绸帽",
     "item.textile.primitive_insulation": "原始保暖夹层",
-    "tfc.jei.raw_hide_knapping": "毛皮隔层加工",
+    "tfc.jei.primitive_insulation_knapping": "毛皮隔层加工",
     "block.textile.wild_crop.flax": "野生亚麻",
     "block.textile.wild_crop.cotton": "野生棉花",
     "block.textile.dead_crop.flax": "枯萎的亚麻",

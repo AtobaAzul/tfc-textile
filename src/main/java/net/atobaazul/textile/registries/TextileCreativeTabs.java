@@ -5,10 +5,12 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static net.atobaazul.textile.Textile.MOD_ID;
+import static net.atobaazul.textile.registries.TextileBlocks.*;
 import static net.atobaazul.textile.registries.TextileItems.*;
 
 public class TextileCreativeTabs {
@@ -29,6 +31,9 @@ public class TextileCreativeTabs {
                 output.accept(FLAX);
                 output.accept(FLAX_FIBER);
                 output.accept(LINEN_CLOTH);
+
+                //output.accept(new ItemStack(WILD_COTTON_CROP.get().asItem()));
+                //output.accept(new ItemStack(WILD_FLAX_CROP.get().asItem()));
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TEXTILE_CLOTHING = CREATIVE_MODE_TABS.register("textile_clothing", () -> CreativeModeTab.builder()

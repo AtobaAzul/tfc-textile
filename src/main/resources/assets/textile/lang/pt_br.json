@@ -81,7 +81,7 @@
   "item.textile.wool_helmet": "Chapéu de Lã",
   "item.textile.silk_helmet": "Chapéu de Seda",
   "item.textile.primitive_insulation": "Insulação Primitiva",
-  "tfc.jei.raw_hide_knapping": "Corte de Insulação",
+  "tfc.jei.primitive_insulation_knapping": "Corte de Insulação",
   "block.textile.wild_crop.flax": "Linho Silvestre",
   "block.textile.wild_crop.cotton": "Algodão Silvestre",
   "block.textile.dead_crop.flax": "Linho Morto",

@@ -1,9 +1,8 @@
 package net.atobaazul.textile;
 
-import net.atobaazul.textile.registries.TextileCreativeTabs;
-import net.atobaazul.textile.registries.TextileItems;
-import net.atobaazul.textile.registries.TextileLootModifiers;
-import net.atobaazul.textile.registries.TextileMaterials;
+import net.atobaazul.textile.registries.*;
+import net.dries007.tfc.util.climate.ClimateRange;
+import net.dries007.tfc.util.data.DataManager;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.component.DyedItemColor;
 import net.neoforged.bus.api.IEventBus;
@@ -11,11 +10,15 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+
+import java.util.Locale;
 
 @Mod(Textile.MOD_ID)
 public class Textile {
     public static final String MOD_ID = "textile";
+
+    public static final DataManager.Reference<ClimateRange> FLAX_CLIMATE_RANGE = registerClimateRange("crop/flax");
+    public static final DataManager.Reference<ClimateRange> COTTON_CLIMATE_RANGE = registerClimateRange("crop/cotton");
 
     public Textile(IEventBus bus, ModContainer modContainer) {
         bus.addListener(this::commonSetup);
@@ -32,6 +35,14 @@ public class Textile {
         TextileCreativeTabs.CREATIVE_MODE_TABS.register(bus);
 
         bus.addListener(this::registerColorHandler);
+
+        TextileBlocks.BLOCKS.register(bus);
+        TextileBlocks.BLOCK_ENTITIES.register(bus);
+    }
+
+    private static DataManager.Reference<ClimateRange> registerClimateRange(String name) {
+        return ClimateRange.MANAGER.getReference(textileResource(name.toLowerCase(Locale.ROOT)));
+
     }
 
     public static ResourceLocation textileResource(String name) {
