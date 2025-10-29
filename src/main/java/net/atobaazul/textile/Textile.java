@@ -13,6 +13,8 @@ import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 
 import java.util.Locale;
 
+import static net.atobaazul.textile.registries.TextileItems.LEATHER_APRON;
+
 @Mod(Textile.MOD_ID)
 public class Textile {
     public static final String MOD_ID = "textile";
@@ -61,5 +63,7 @@ public class Textile {
         TextileItems.LINEN_CLOTHES.forEach(item -> {
             event.register((stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.getOrDefault(stack, 0xFFe9dcbd), item);
         });
+
+        event.register((stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.LEATHER_COLOR, LEATHER_APRON);
     }
 }

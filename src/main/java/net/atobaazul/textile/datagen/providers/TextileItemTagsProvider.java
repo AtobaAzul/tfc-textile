@@ -2,6 +2,7 @@ package net.atobaazul.textile.datagen.providers;
 
 
 import net.atobaazul.textile.common.item.TextileItemTags;
+import net.dries007.tfc.common.TFCTags;
 import net.dries007.tfc.common.items.HideItemType;
 import net.dries007.tfc.common.items.TFCItems;
 import net.minecraft.core.HolderLookup;
@@ -18,7 +19,6 @@ import java.util.concurrent.CompletableFuture;
 
 import static net.atobaazul.textile.Textile.MOD_ID;
 import static net.atobaazul.textile.common.item.TextileItemTags.*;
-import static net.atobaazul.textile.registries.TextileItems.FURS;
 import static net.atobaazul.textile.registries.TextileItems.*;
 
 public class TextileItemTagsProvider extends ItemTagsProvider {
@@ -116,8 +116,25 @@ public class TextileItemTagsProvider extends ItemTagsProvider {
 
         tag(REPLACEABLE_HIDE).replace(false).add(TFCItems.HIDES.get(HideItemType.RAW).get(HideItemType.Size.MEDIUM).get()).add(TFCItems.HIDES.get(HideItemType.RAW).get(HideItemType.Size.LARGE).get());
 
-        IntrinsicTagAppender<Item> furTag = tag(TextileItemTags.FURS).replace(false);
+        tag(TFCTags.Items.SEWING_DARK_CLOTH).replace(false).add(LINEN_CLOTH.get());
+        tag(TFCTags.Items.SEWING_LIGHT_CLOTH).replace(false).add(COTTON_CLOTH.get());
+        tag(TFCTags.Items.HIGH_QUALITY_CLOTH).replace(false).add(COTTON_CLOTH.get());
+
+        IntrinsicTagAppender<Item> furTag = tag(TextileItemTags.FURS_TAG).replace(false);
         FURS.forEach((item) -> furTag.add(item.get()));
+
+        //curios
+        tag(GLOVES).replace(false)
+                .add(LEATHER_GLOVES.get())
+                .add(WOOL_GLOVES.get())
+                .add(SILK_GLOVES.get())
+                .add(COTTON_GLOVES.get());
+
+        tag(SCARF).replace(false)
+                .add(WOOL_SCARF.get())
+                .add(SILK_SCARF.get())
+                .add(COTTON_SCARF.get());
+
     }
 }
 

@@ -5,6 +5,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.client.model.generators.loaders.SeparateTransformsModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -13,8 +14,11 @@ import static net.atobaazul.textile.Textile.textileResource;
 import static net.atobaazul.textile.registries.TextileItems.*;
 
 public class TextileItemModelProvider extends ItemModelProvider {
+    private final ExistingFileHelper helper;
+
     public TextileItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, MOD_ID, existingFileHelper);
+        this.helper = existingFileHelper;
     }
 
 
@@ -47,6 +51,7 @@ public class TextileItemModelProvider extends ItemModelProvider {
         simpleItem(FLAX_FIBER);
         simpleItem(LINEN_CLOTH);
 
+        //dyeableItem(LEATHER_APRON);
     }
 
     private ItemModelBuilder simpleItem(DeferredItem<Item> item) {
@@ -55,6 +60,5 @@ public class TextileItemModelProvider extends ItemModelProvider {
 
     private void dyeableItem(DeferredItem<Item> item) {
         withExistingParent(item.getId().getPath(), ResourceLocation.fromNamespaceAndPath("minecraft", "item/generated")).texture("layer0", textileResource("item/" + item.getId().getPath())).texture("layer1", textileResource("item/" + item.getId().getPath() + "_overlay"));
-
     }
 }
