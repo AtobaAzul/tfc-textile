@@ -46,7 +46,7 @@ public class Textile {
         });
 
         TextileItems.LINEN_CLOTHES.forEach(item -> {
-            event.register((stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.getOrDefault(stack, 0xFFE380), item);
+            event.register((stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.getOrDefault(stack, 0xFFe9dcbd), item);
         });
     }
 }

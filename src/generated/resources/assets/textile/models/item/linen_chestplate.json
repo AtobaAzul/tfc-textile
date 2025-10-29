@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "textile:item/linen_chestplate"
+    "layer0": "textile:item/linen_chestplate",
+    "layer1": "textile:item/linen_chestplate_overlay"
   }
 }

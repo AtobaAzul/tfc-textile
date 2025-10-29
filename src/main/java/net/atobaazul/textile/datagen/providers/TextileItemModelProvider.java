@@ -1,6 +1,5 @@
 package net.atobaazul.textile.datagen.providers;
 
-import net.atobaazul.tfc_coldsweat.TFCColdSweat;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -10,13 +9,13 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import static net.atobaazul.textile.Textile.MOD_ID;
+import static net.atobaazul.textile.Textile.textileResource;
 import static net.atobaazul.textile.registries.TextileItems.*;
 
 public class TextileItemModelProvider extends ItemModelProvider {
     public TextileItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, MOD_ID, existingFileHelper);
     }
-
 
 
     @Override
@@ -36,8 +35,8 @@ public class TextileItemModelProvider extends ItemModelProvider {
         BISON_CLOTHES.forEach(this::simpleItem);
         YAK_CLOTHES.forEach(this::simpleItem);
 
-        LINEN_CLOTHES.forEach(this::simpleItem);
-        COTTON_CLOTHES.forEach(this::simpleItem);
+        LINEN_CLOTHES.forEach(this::dyeableItem);
+        COTTON_CLOTHES.forEach(this::dyeableItem);
 
         FURS.forEach(this::simpleItem);
         simpleItem(PRIMITIVE_INSULATION);
@@ -51,13 +50,11 @@ public class TextileItemModelProvider extends ItemModelProvider {
     }
 
     private ItemModelBuilder simpleItem(DeferredItem<Item> item) {
-        return withExistingParent(item.getId().getPath(), ResourceLocation.fromNamespaceAndPath("minecraft", "item/generated")).texture("layer0", ResourceLocation.fromNamespaceAndPath(MOD_ID, "item/"+item.getId().getPath()));
+        return withExistingParent(item.getId().getPath(), ResourceLocation.fromNamespaceAndPath("minecraft", "item/generated")).texture("layer0", textileResource("item/" + item.getId().getPath()));
     }
 
     private void dyeableItem(DeferredItem<Item> item) {
-        withExistingParent(item.getId().getPath(), ResourceLocation.fromNamespaceAndPath("minecraft", "item/generated"))
-                .texture("layer0", ResourceLocation.fromNamespaceAndPath(TFCColdSweat.MOD_ID, "item/" + item.getId().getPath()))
-                .texture("layer1", ResourceLocation.fromNamespaceAndPath(TFCColdSweat.MOD_ID, "item/" + item.getId().getPath() + "_overlay"));
+        withExistingParent(item.getId().getPath(), ResourceLocation.fromNamespaceAndPath("minecraft", "item/generated")).texture("layer0", textileResource("item/" + item.getId().getPath())).texture("layer1", textileResource("item/" + item.getId().getPath() + "_overlay"));
 
     }
 }

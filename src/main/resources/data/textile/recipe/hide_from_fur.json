@@ -1,17 +1,25 @@
 {
-  "type": "tfc:damage_inputs_shapeless_crafting",
-  "recipe": {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-      {
-        "tag": "textile:furs"
-      },
-      {
-        "tag": "tfc:knives"
-      }
-    ],
-    "result": {
-      "id": "tfc:large_raw_hide"
+  "type": "tfc:advanced_shapeless_crafting",
+  "ingredients": [
+    {
+      "tag": "textile:furs"
+    },
+    {
+      "tag": "c:tools/knife"
     }
+  ],
+  "primary_ingredient": {
+    "tag": "c:tools/knife"
+  },
+  "remainder": {
+    "modifiers": [
+      {
+        "type": "tfc:damage_crafting_remainder"
+      }
+    ]
+  },
+  "result": {
+    "count": 1,
+    "id": "tfc:large_raw_hide"
   }
 }
