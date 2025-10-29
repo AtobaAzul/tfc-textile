@@ -1,109 +1,117 @@
 package net.atobaazul.textile;
 
-import com.mojang.logging.LogUtils;
-import net.atobaazul.textile.block.TextileBlocks;
-import net.atobaazul.textile.block_entities.TextileBlockEntities;
-import net.atobaazul.textile.client.ClientEventHandler;
-import net.atobaazul.textile.crop.TextileCrop;
-import net.atobaazul.textile.loot.ModLootModifiers;
-import net.atobaazul.textile.registries.TextileCreativeModeTabs;
-import net.atobaazul.textile.registries.TextileItems;
-import net.atobaazul.textile.util.TextileLoot;
-import net.atobaazul.textile.worldgen.TextileFeatures;
-import net.dries007.tfc.common.TFCCreativeTabs;
-import net.minecraft.world.item.DyeableLeatherItem;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.RegisterColorHandlersEvent;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLEnvironment;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
-@Mod(Textile.MOD_ID)
+import com.mojang.logging.LogUtils;
+
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+// The value here should match an entry in the META-INF/neoforge.mods.toml file
+@Mod(Textile.MODID)
 public class Textile {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "textile";
-
+    public static final String MODID = "textile";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
+    // Create a Deferred Register to hold Blocks which will all be registered under the "textile" namespace
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
+    // Create a Deferred Register to hold Items which will all be registered under the "textile" namespace
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
+    // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "textile" namespace
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    public Textile() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+    // Creates a new Block with the id "textile:example_block", combining the namespace and path
+    public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
+    // Creates a new BlockItem with the id "textile:example_block", combining the namespace and path
+    public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
 
+    // Creates a new food item with the id "textile:example_id", nutrition 1 and saturation 2
+    public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
+            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
-        TextileItems.register(bus);
-        TextileCreativeModeTabs.TABS.register(bus);
-        ModLootModifiers.register(bus);
-        TextileBlocks.BLOCKS.register(bus);
-        TextileFeatures.FEATURES.register(bus);
+    // Creates a creative tab with the id "textile:example_tab" for the example item, that is placed after the combat tab
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.textile")) //The language key for the title of your CreativeModeTab
+            .withTabsBefore(CreativeModeTabs.COMBAT)
+            .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
+            .displayItems((parameters, output) -> {
+                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+            }).build());
 
-        TextileLoot.CONDITIONS.register(bus);
-        TextileLoot.LOOT_FUNCTIONS.register(bus);
-        TextileLoot.NUMBER_PROVIDERS.register(bus);
-
+    // The constructor for the mod class is the first code that is run when your mod is loaded.
+    // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
+    public Textile(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
-        bus.addListener(this::commonSetup);
+        modEventBus.addListener(this::commonSetup);
 
-        if (FMLEnvironment.dist == Dist.CLIENT) {
-            ClientEventHandler.init();
-        }
-        TextileBlockEntities.BLOCK_ENTITIES.register(bus);
+        // Register the Deferred Register to the mod event bus so blocks get registered
+        BLOCKS.register(modEventBus);
+        // Register the Deferred Register to the mod event bus so items get registered
+        ITEMS.register(modEventBus);
+        // Register the Deferred Register to the mod event bus so tabs get registered
+        CREATIVE_MODE_TABS.register(modEventBus);
 
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
+        // Register ourselves for server and other game events we are interested in.
+        // Note that this is necessary if and only if we want *this* class (Textile) to respond directly to events.
+        // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
+        NeoForge.EVENT_BUS.register(this);
 
         // Register the item to a creative tab
-        bus.addListener(this::addCreative);
+        modEventBus.addListener(this::addCreative);
 
+        // Register our mod's ModConfigSpec so that FML can create and load the config file for us
+        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
+    private void commonSetup(FMLCommonSetupEvent event) {
+        // Some common setup code
+        LOGGER.info("HELLO FROM COMMON SETUP");
 
+        if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
+            LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
+        }
+
+        LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
+
+        Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTab() == TFCCreativeTabs.EARTH.tab().get()) {
-            event.accept(TextileBlocks.WILD_CROPS.get(TextileCrop.COTTON));
-            event.accept(TextileBlocks.WILD_CROPS.get(TextileCrop.FLAX));
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(EXAMPLE_BLOCK_ITEM);
         }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-
-    }
-
-
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            /*CuriosRendererRegistry.register(TFCTextileItems.SILK_PANTS.get(), RenderCurio::new);
-            CuriosRendererRegistry.register(TFCTextileItems.SILK_SHIRT.get(), RenderCurio::new);
-            CuriosRendererRegistry.register(TFCTextileItems.SILK_HAT.get(), RenderCurio::new);*/
-        }
-
-        @SubscribeEvent
-        public static void registerColorHandlers(RegisterColorHandlersEvent.Item event) {
-            event.register( //Not sure what the tint index here does. Copied this from some example in GitHub.
-                    (stack, tintIndex) -> tintIndex > 0 ? -1 : ((DyeableLeatherItem) stack.getItem()).getColor(stack),
-                    TextileItems.LINEN_HAT.get(), TextileItems.LINEN_SHIRT.get(), TextileItems.LINEN_PANTS.get(),
-                    TextileItems.COTTON_HAT.get(), TextileItems.COTTON_SHIRT.get(), TextileItems.COTTON_PANTS.get(),
-                    TextileItems.BURLAP_HAT.get(), TextileItems.BURLAP_SHIRT.get(), TextileItems.BURLAP_PANTS.get(),
-                    TextileItems.SILK_HAT.get(), TextileItems.SILK_SHIRT.get(), TextileItems.SILK_PANTS.get(),
-                    TextileItems.WOOL_HAT.get(), TextileItems.WOOL_SHIRT.get(), TextileItems.WOOL_PANTS.get()
-            );
-        }
+        // Do something when the server starts
+        LOGGER.info("HELLO from server starting");
     }
 }
