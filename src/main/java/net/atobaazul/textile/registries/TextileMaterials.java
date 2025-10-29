@@ -62,10 +62,10 @@ public class TextileMaterials {
         ArmorMaterial material = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), (map) -> {
             map.put(ArmorItem.Type.BOOTS, 1);
             map.put(ArmorItem.Type.LEGGINGS, 2);
-            map.put(ArmorItem.Type.CHESTPLATE, 2);
+            map.put(ArmorItem.Type.CHESTPLATE, 3);
             map.put(ArmorItem.Type.HELMET, 1);
             map.put(ArmorItem.Type.BODY, 4);
-        }), 0, Holder.direct(SoundEvents.WOOL_PLACE), () -> Ingredient.EMPTY, List.of(new ArmorMaterial.Layer(textileResource(name), "", true), new ArmorMaterial.Layer(textileResource(name), "", false)), 1, 0);
+        }), 0, Holder.direct(SoundEvents.WOOL_PLACE), () -> Ingredient.EMPTY, List.of(new ArmorMaterial.Layer(textileResource(name), "", true), new ArmorMaterial.Layer(textileResource(name), "", false)), 0, 0);
 
         return MATERIALS.register(name, () -> material);
     }
