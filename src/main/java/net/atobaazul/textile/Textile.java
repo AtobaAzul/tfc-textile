@@ -36,6 +36,7 @@ public class Textile {
         //NeoForge.EVENT_BUS.register(this);
 
         TextileItems.ITEMS.register(bus);
+        TextileLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(bus);
         TextileMaterials.MATERIALS.register(bus);
         TextileCreativeTabs.CREATIVE_MODE_TABS.register(bus);
 
