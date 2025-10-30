@@ -135,14 +135,14 @@ public class TextileItemTagsProvider extends ItemTagsProvider {
                 .add(COTTON_SCARF.get());
 
         dyeableTag
-                .add(LEATHER_GLOVES.get())
-                .add(LEATHER_APRON.get())
+                .add(LEATHER_APRON.get());
+                /*.add(LEATHER_GLOVES.get())
                 .add(WOOL_GLOVES.get())
                 .add(SILK_GLOVES.get())
                 .add(COTTON_GLOVES.get())
                 .add(WOOL_SCARF.get())
                 .add(SILK_SCARF.get())
-                .add(COTTON_SCARF.get());
+                .add(COTTON_SCARF.get());*/
 
 
     }

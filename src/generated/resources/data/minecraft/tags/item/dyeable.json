@@ -6,13 +6,6 @@
     "textile:cotton_helmet",
     "textile:cotton_chestplate",
     "textile:cotton_leggings",
-    "textile:leather_gloves",
-    "textile:leather_apron",
-    "textile:wool_gloves",
-    "textile:silk_gloves",
-    "textile:cotton_gloves",
-    "textile:wool_scarf",
-    "textile:silk_scarf",
-    "textile:cotton_scarf"
+    "textile:leather_apron"
   ]
 }
