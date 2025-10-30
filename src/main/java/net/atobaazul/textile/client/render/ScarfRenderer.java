@@ -53,6 +53,8 @@ public class ScarfRenderer implements ICurioRenderer {
 
     @Override
     public <T extends LivingEntity, M extends EntityModel<T>> void render(ItemStack itemStack, SlotContext slotContext, PoseStack poseStack, RenderLayerParent<T, M> renderLayerParent, MultiBufferSource multiBufferSource, int i, float v, float v1, float v2, float v3, float v4, float v5) {
+        poseStack.pushPose();
+
         ItemRenderer itemRenderer = Minecraft.getInstance().getItemRenderer();
         LivingEntity entity = slotContext.entity();
         Level level = entity.level();

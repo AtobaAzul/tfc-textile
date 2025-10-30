@@ -24,7 +24,7 @@
       "parent": "textile:item/wool_scarf_item"
     },
     "ground": {
-      "parent": "textile:item/scarf_1"
+      "parent": "textile:item/silk_scarf_item"
     },
     "head": {
       "parent": "textile:item/scarf_0"
