@@ -26,11 +26,11 @@ public class TextileBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MOD_ID);
 
     public static final DeferredBlock<Block> DEAD_FLAX_CROP = BLOCKS.register("dead_crop/flax", () -> new DeadFlaxCropBlock(dead(), FLAX_CLIMATE_RANGE));
-    public static final DeferredBlock<Block> FLAX_CROP = BLOCKS.register("crop/flax", () -> new FlaxCropBlock(doubleCrop(), 3, 6, DEAD_FLAX_CROP, FLAX_SEEDS, 0.6f, 0.4f, -0.4f, FLAX_CLIMATE_RANGE));
+    public static final DeferredBlock<Block> FLAX_CROP = BLOCKS.register("crop/flax", () -> new FlaxCropBlock(doubleCrop(), 2, 4, DEAD_FLAX_CROP, FLAX_SEEDS, 0.6f, 0.4f, -0.4f, FLAX_CLIMATE_RANGE));
     public static final DeferredBlock<Block> WILD_FLAX_CROP = BLOCKS.register("wild_crop/flax", ()-> new WildFlaxCropBlock(doubleCrop()));
 
     public static final DeferredBlock<Block> DEAD_COTTON_CROP = BLOCKS.register("dead_crop/cotton", () -> new DeadCottonCropBlock(dead(), COTTON_CLIMATE_RANGE));
-    public static final DeferredBlock<Block> COTTON_CROP = BLOCKS.register("crop/cotton", () -> new CottonCropBlock(doubleCrop(), 3, 6, DEAD_COTTON_CROP, COTTON_SEEDS, 0.6f, 0.4f, -0.4f, COTTON_CLIMATE_RANGE));
+    public static final DeferredBlock<Block> COTTON_CROP = BLOCKS.register("crop/cotton", () -> new CottonCropBlock(doubleCrop(), 1, 5, DEAD_COTTON_CROP, COTTON_SEEDS, 0.6f, 0.4f, -0.4f, COTTON_CLIMATE_RANGE));
     public static final DeferredBlock<Block> WILD_COTTON_CROP = BLOCKS.register("wild_crop/cotton", ()-> new WildCottonCropBlock(doubleCrop()));
 
     private static ExtendedProperties doubleCrop()
