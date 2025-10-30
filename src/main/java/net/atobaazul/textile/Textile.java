@@ -1,6 +1,7 @@
 package net.atobaazul.textile;
 
 import com.google.common.collect.ImmutableList;
+import net.atobaazul.textile.datagen.providers.TextileLoot;
 import net.atobaazul.textile.registries.*;
 import net.dries007.tfc.util.climate.ClimateRange;
 import net.dries007.tfc.util.data.DataManager;
@@ -43,6 +44,8 @@ public class Textile {
 
         TextileBlocks.BLOCKS.register(bus);
         TextileBlocks.BLOCK_ENTITIES.register(bus);
+
+        TextileLoot.NUMBER_PROVIDERS.register(bus);
     }
 
     private static DataManager.Reference<ClimateRange> registerClimateRange(String name) {

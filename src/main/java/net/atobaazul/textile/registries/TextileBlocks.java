@@ -2,6 +2,7 @@ package net.atobaazul.textile.registries;
 
 import net.atobaazul.textile.common.block.crop.*;
 
+import net.dries007.tfc.common.blockentities.CropBlockEntity;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.Block;
@@ -42,6 +43,7 @@ public class TextileBlocks {
     {
         return dead().blockEntity(CROP).serverTicks(TextileCropBlockEntity::serverTick);
     }
+
 
     private static ExtendedProperties dead()
     {

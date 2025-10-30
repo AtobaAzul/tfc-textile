@@ -7,11 +7,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "textile:flax",
+          "name": "textile:cotton",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "textile:crop/flax",
+              "block": "textile:crop/cotton",
               "properties": {
                 "age": "5",
                 "part": "bottom"
@@ -22,7 +22,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "type": "tfc:crop_yield_uniform",
+                "type": "textile:crop_yield_uniform",
                 "min": 0,
                 "max": {
                   "type": "minecraft:uniform",
@@ -46,11 +46,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "textile:seeds/flax",
+          "name": "textile:seeds/cotton",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "textile:crop/flax",
+              "block": "textile:crop/cotton",
               "properties": {
                 "part": "bottom"
               }
