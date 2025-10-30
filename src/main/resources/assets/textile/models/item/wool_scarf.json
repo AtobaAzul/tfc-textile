@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/generated",
+  "base": {
+    "parent": "textile:item/scarf_1"
+  },
+  "loader": "neoforge:separate_transforms",
+  "perspectives": {
+    "fixed": {
+      "parent": "textile:item/wool_scarf_item"
+    },
+    "gui": {
+      "parent": "textile:item/wool_scarf_item"
+    },
+    "firstperson_righthand": {
+      "parent": "textile:item/wool_scarf_item"
+    },
+    "firstperson_lefthand": {
+      "parent": "textile:item/wool_scarf_item"
+    },
+    "thirdperson_righthand": {
+      "parent": "textile:item/wool_scarf_item"
+    },
+    "thirdperson_lefthand": {
+      "parent": "textile:item/wool_scarf_item"
+    },
+    "ground": {
+      "parent": "textile:item/scarf_1"
+    },
+    "head": {
+      "parent": "textile:item/scarf_0"
+    }
+  }
+}

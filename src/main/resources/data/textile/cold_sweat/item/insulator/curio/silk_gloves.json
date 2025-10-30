@@ -1,0 +1,13 @@
+{
+  "type": "curio",
+  "insulation": {
+    "value": 4,
+    "adapt_speed": 0.0085
+  },
+
+  "item": {
+    "items": [
+      "textile:silk_gloves"
+    ]
+  }
+}

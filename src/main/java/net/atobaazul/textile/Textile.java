@@ -1,19 +1,22 @@
 package net.atobaazul.textile;
 
+import com.google.common.collect.ImmutableList;
 import net.atobaazul.textile.registries.*;
 import net.dries007.tfc.util.climate.ClimateRange;
 import net.dries007.tfc.util.data.DataManager;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.component.DyedItemColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.Locale;
 
-import static net.atobaazul.textile.registries.TextileItems.LEATHER_APRON;
+import static net.atobaazul.textile.registries.TextileItems.*;
 
 @Mod(Textile.MOD_ID)
 public class Textile {
@@ -56,7 +59,20 @@ public class Textile {
     }
 
     private void registerColorHandler(RegisterColorHandlersEvent.Item event) {
+        ImmutableList<DeferredItem<Item>> whiteColored = ImmutableList.of(
+                WOOL_SCARF,
+                WOOL_GLOVES,
+                SILK_SCARF,
+                SILK_GLOVES,
+                COTTON_SCARF,
+                COTTON_GLOVES
+        );
+
         TextileItems.COTTON_CLOTHES.forEach(item -> {
+            event.register((stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.getOrDefault(stack, 0xFFFFFFFF), item);
+        });
+
+        whiteColored.forEach(item -> {
             event.register((stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.getOrDefault(stack, 0xFFFFFFFF), item);
         });
 
@@ -65,5 +81,6 @@ public class Textile {
         });
 
         event.register((stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.LEATHER_COLOR, LEATHER_APRON);
+        event.register((stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.LEATHER_COLOR, LEATHER_GLOVES);
     }
 }

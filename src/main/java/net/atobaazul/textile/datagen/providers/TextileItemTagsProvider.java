@@ -108,7 +108,6 @@ public class TextileItemTagsProvider extends ItemTagsProvider {
             cottonClothesTag.add(item.get());
         });
 
-
         //other tags
         tag(Tags.Items.STRINGS).replace(false).add(COTTON_STRING.get());
 
@@ -134,6 +133,17 @@ public class TextileItemTagsProvider extends ItemTagsProvider {
                 .add(WOOL_SCARF.get())
                 .add(SILK_SCARF.get())
                 .add(COTTON_SCARF.get());
+
+        dyeableTag
+                .add(LEATHER_GLOVES.get())
+                .add(LEATHER_APRON.get())
+                .add(WOOL_GLOVES.get())
+                .add(SILK_GLOVES.get())
+                .add(COTTON_GLOVES.get())
+                .add(WOOL_SCARF.get())
+                .add(SILK_SCARF.get())
+                .add(COTTON_SCARF.get());
+
 
     }
 }

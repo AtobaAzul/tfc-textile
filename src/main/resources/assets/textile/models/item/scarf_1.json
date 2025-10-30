@@ -1,0 +1,45 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "textile:item/wool_scarf"
+	},
+	"elements": [
+		{
+			"from": [4, 7.25, 5.65],
+			"to": [12, 17.25, 8.65],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.25, 4.65]},
+			"faces": {
+				"north": {"uv": [0.5, 4, 2.5, 6.5], "texture": "#1"},
+				"east": {"uv": [0.5, 4, 0, 6.5], "texture": "#1"},
+				"south": {"uv": [2.5, 4, 4.5, 6.5], "texture": "#1"},
+				"west": {"uv": [2.5, 4, 2.5, 6.5], "texture": "#1"},
+				"up": {"uv": [2.5, 4, 0.5, 3.25], "texture": "#1"},
+				"down": {"uv": [4.5, 4, 2.5, 3.25], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Waist",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [
+				{
+					"name": "Head",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "Body",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"children": []
+				}
+			]
+		},
+		0
+	]
+}

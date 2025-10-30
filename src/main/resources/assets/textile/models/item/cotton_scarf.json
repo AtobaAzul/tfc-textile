@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:item/generated",
+  "base": {
+    "parent": "textile:item/scarf_1",
+    "textures": {
+      "1": "textile:item/cotton_scarf"
+    }
+  },
+  "loader": "neoforge:separate_transforms",
+  "perspectives": {
+    "fixed": {
+      "parent": "textile:item/cotton_scarf_item"
+    },
+    "gui": {
+      "parent": "textile:item/cotton_scarf_item"
+    },
+    "firstperson_righthand": {
+      "parent": "textile:item/cotton_scarf_item"
+    },
+    "firstperson_lefthand": {
+      "parent": "textile:item/cotton_scarf_item"
+    },
+    "thirdperson_righthand": {
+      "parent": "textile:item/cotton_scarf_item"
+    },
+    "thirdperson_lefthand": {
+      "parent": "textile:item/cotton_scarf_item"
+    },
+    "ground": {
+      "parent": "textile:item/cotton_scarf_item"
+    },
+    "head": {
+      "parent": "textile:item/scarf_0",
+      "textures": {
+        "1": "textile:item/cotton_scarf"
+      }
+    }
+  }
+}

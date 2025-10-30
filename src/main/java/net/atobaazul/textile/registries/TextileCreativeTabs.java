@@ -59,6 +59,18 @@ public class TextileCreativeTabs {
                 RAW_HIDE_CLOTHES.forEach(output::accept);
                 LINEN_CLOTHES.forEach(output::accept);
                 COTTON_CLOTHES.forEach(output::accept);
+
+                output.accept(LEATHER_APRON);
+                output.accept(UMBRELLA);
+                output.accept(LEATHER_GLOVES);
+                output.accept(SILK_GLOVES);
+                output.accept(SILK_SCARF);
+                output.accept(WOOL_GLOVES);
+                output.accept(WOOL_SCARF);
+                output.accept(COTTON_GLOVES);
+                output.accept(COTTON_SCARF);
+
+
             }).build());
 
 

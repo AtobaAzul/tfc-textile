@@ -33,7 +33,6 @@ public class TextileBlocks {
     public static final DeferredBlock<Block> COTTON_CROP = BLOCKS.register("crop/cotton", () -> new CottonCropBlock(doubleCrop(), 3, 6, DEAD_COTTON_CROP, COTTON_SEEDS, 0.6f, 0.4f, -0.4f, COTTON_CLIMATE_RANGE));
     public static final DeferredBlock<Block> WILD_COTTON_CROP = BLOCKS.register("wild_crop/cotton", ()-> new WildCottonCropBlock(doubleCrop()));
 
-
     private static ExtendedProperties doubleCrop()
     {
         return dead().blockEntity(CROP).serverTicks(TextileCropBlockEntity::serverTickBottomPartOnly);

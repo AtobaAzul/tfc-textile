@@ -1,0 +1,17 @@
+{
+
+  "item": {
+    "items": [
+      "tfc:wool_cloth",
+      "tfc:burlap_cloth",
+      "tfc:silk_cloth",
+      "textile:cotton_cloth",
+      "textile:linen_cloth"
+    ]
+  },
+  "entity": {
+    "entities": [
+      "minecraft:player"
+    ]
+  }
+}

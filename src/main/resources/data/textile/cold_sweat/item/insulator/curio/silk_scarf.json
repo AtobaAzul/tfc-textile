@@ -1,0 +1,13 @@
+{
+  "type": "curio",
+  "insulation": {
+    "value": 8,
+    "adapt_speed": 0.0085
+  },
+
+  "item": {
+    "items": [
+      "textile:silk_scarf"
+    ]
+  }
+}

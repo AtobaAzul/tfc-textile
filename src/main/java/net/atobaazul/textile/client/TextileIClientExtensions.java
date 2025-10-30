@@ -7,6 +7,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.DyedItemColor;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 
+import static net.atobaazul.textile.registries.TextileItems.*;
+
 public class TextileIClientExtensions implements IClientItemExtensions {
     @Override
     public int getDefaultDyeColor(ItemStack stack) {
@@ -14,7 +16,7 @@ public class TextileIClientExtensions implements IClientItemExtensions {
         if (stack.is(ItemTags.DYEABLE)) {
             if (stack.is(TextileItemTags.LINEN_CLOTHES_TAG)) {
                 color = 0xe9dcbd;
-            } else if (stack.is(TextileItemTags.COTTON_CLOTHES_TAG)) {
+            } else if (stack.is(TextileItemTags.COTTON_CLOTHES_TAG) || stack.is(COTTON_GLOVES) || stack.is(COTTON_SCARF) || stack.is(WOOL_GLOVES) || stack.is(WOOL_SCARF) || stack.is(SILK_GLOVES) ||stack.is(SILK_SCARF)) {
                 color = 0xFFFFFFFF;
             }
         }

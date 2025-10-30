@@ -1,0 +1,12 @@
+{
+  "type": "curio",
+  "insulation": {
+    "heat": 1,
+    "cold": 4
+  },
+  "item": {
+    "items": [
+      "textile:cotton_gloves"
+    ]
+  }
+}
