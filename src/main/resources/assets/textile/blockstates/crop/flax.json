@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "variants": {
     "age=0": {
       "model": "textile:block/crop/flax_1"

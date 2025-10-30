@@ -72,7 +72,7 @@ public class TextileItems {
     public final static List<DeferredItem<Item>> COTTON_CLOTHES = armorSetWithoutBoots("cotton", COTTON_MATERIAL, 50);
 
     public static final DeferredItem<ItemNameBlockItem> FLAX_SEEDS = ITEMS.register("seeds/flax", ()-> new ItemNameBlockItem(TextileBlocks.FLAX_CROP.get(), new Item.Properties()));
-    public static final DeferredItem<ItemNameBlockItem> COTTON_SEEDS = ITEMS.register("seeds/cotton", ()-> new ItemNameBlockItem(TextileBlocks.FLAX_CROP.get(), new Item.Properties()));
+    public static final DeferredItem<ItemNameBlockItem> COTTON_SEEDS = ITEMS.register("seeds/cotton", ()-> new ItemNameBlockItem(TextileBlocks.COTTON_CROP.get(), new Item.Properties()));
 
 
     //accessories
