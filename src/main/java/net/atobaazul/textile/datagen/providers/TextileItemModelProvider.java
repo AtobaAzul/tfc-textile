@@ -37,7 +37,7 @@ public class TextileItemModelProvider extends ItemModelProvider {
         SABERTOOTH_CLOTHES.forEach(this::simpleItem);
         TIGER_CLOTHES.forEach(this::simpleItem);
         BISON_CLOTHES.forEach(this::simpleItem);
-        YAK_CLOTHES.forEach(this::simpleItem);
+        //YAK_CLOTHES.forEach(this::simpleItem);
 
         LINEN_CLOTHES.forEach(this::dyeableItem);
         COTTON_CLOTHES.forEach(this::dyeableItem);

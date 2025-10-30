@@ -47,10 +47,6 @@
     "textile:bison_helmet",
     "textile:bison_chestplate",
     "textile:bison_leggings",
-    "textile:bison_boots",
-    "textile:yak_helmet",
-    "textile:yak_chestplate",
-    "textile:yak_leggings",
-    "textile:yak_boots"
+    "textile:bison_boots"
   ]
 }

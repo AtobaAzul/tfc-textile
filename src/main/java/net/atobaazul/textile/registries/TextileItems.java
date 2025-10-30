@@ -38,8 +38,8 @@ public class TextileItems {
             furItem("polar_bear"),
             furItem("sabertooth"),
             furItem("tiger"),
-            furItem("bison"),
-            furItem("yak")
+            furItem("bison")
+            //furItem("yak")
     );
 
     //basic items
@@ -65,7 +65,7 @@ public class TextileItems {
     public final static List<DeferredItem<Item>> SABERTOOTH_CLOTHES = armorSet("sabertooth", SABERTOOTH_MATERIAL, 90);
     public final static List<DeferredItem<Item>> TIGER_CLOTHES = armorSet("tiger", TIGER_MATERIAL, 90);
     public final static List<DeferredItem<Item>> BISON_CLOTHES = armorSet("bison", BISON_MATERIAL, 90);
-    public final static List<DeferredItem<Item>> YAK_CLOTHES = armorSet("yak", YAK_MATERIAL, 90);
+    //public final static List<DeferredItem<Item>> YAK_CLOTHES = armorSet("yak", YAK_MATERIAL, 90);
 
     //cloth clothes
     public final static List<DeferredItem<Item>> LINEN_CLOTHES = armorSetWithoutBoots("linen", LINEN_MATERIAL, 50);

@@ -56,7 +56,7 @@ public class TextileCreativeTabs {
                 SABERTOOTH_CLOTHES.forEach(output::accept);
                 TIGER_CLOTHES.forEach(output::accept);
                 BISON_CLOTHES.forEach(output::accept);
-                YAK_CLOTHES.forEach(output::accept);
+                //YAK_CLOTHES.forEach(output::accept);
 
                 RAW_HIDE_CLOTHES.forEach(output::accept);
                 LINEN_CLOTHES.forEach(output::accept);

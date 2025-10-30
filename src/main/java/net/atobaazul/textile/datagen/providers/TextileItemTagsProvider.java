@@ -93,10 +93,10 @@ public class TextileItemTagsProvider extends ItemTagsProvider {
             armorTag.add(item.get());
             furClothesTag.add(item.get());
         });
-        YAK_CLOTHES.forEach((item) -> {
+        /*YAK_CLOTHES.forEach((item) -> {
             armorTag.add(item.get());
             furClothesTag.add(item.get());
-        });
+        });*/
         LINEN_CLOTHES.forEach((item) -> {
             armorTag.add(item.get());
             dyeableTag.add(item.get());

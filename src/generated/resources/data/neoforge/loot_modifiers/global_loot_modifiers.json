@@ -11,8 +11,7 @@
     "textile:polar_bear_replace_hide_drops",
     "textile:sabertooth_replace_hide_drops",
     "textile:tiger_replace_hide_drops",
-    "textile:bison_replace_hide_drops",
-    "textile:yak_replace_hide_drops"
+    "textile:bison_replace_hide_drops"
   ],
   "replace": false
 }
