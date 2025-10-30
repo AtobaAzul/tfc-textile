@@ -1,7 +1,6 @@
 package net.atobaazul.textile;
 
 import com.google.common.collect.ImmutableList;
-import net.atobaazul.textile.datagen.providers.TextileLoot;
 import net.atobaazul.textile.registries.*;
 import net.dries007.tfc.util.climate.ClimateRange;
 import net.dries007.tfc.util.data.DataManager;
