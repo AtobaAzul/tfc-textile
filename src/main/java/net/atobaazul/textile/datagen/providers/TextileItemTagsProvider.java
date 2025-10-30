@@ -2,6 +2,7 @@ package net.atobaazul.textile.datagen.providers;
 
 
 import net.atobaazul.textile.common.item.TextileItemTags;
+import net.atobaazul.textile.registries.TextileItems;
 import net.dries007.tfc.common.TFCTags;
 import net.dries007.tfc.common.items.HideItemType;
 import net.dries007.tfc.common.items.TFCItems;
@@ -144,6 +145,7 @@ public class TextileItemTagsProvider extends ItemTagsProvider {
                 .add(SILK_SCARF.get())
                 .add(COTTON_SCARF.get());*/
 
+        tag(TextileItemTags.UMBRELLA).replace(false).add(TextileItems.UMBRELLA.get());
 
     }
 }

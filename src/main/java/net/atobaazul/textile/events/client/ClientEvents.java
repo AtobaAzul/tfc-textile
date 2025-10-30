@@ -7,8 +7,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 
 import static net.atobaazul.textile.Textile.MOD_ID;
-import static net.atobaazul.textile.registries.TextileItems.COTTON_CLOTHES;
-import static net.atobaazul.textile.registries.TextileItems.LINEN_CLOTHES;
+import static net.atobaazul.textile.registries.TextileItems.*;
 
 @EventBusSubscriber(value = Dist.CLIENT, modid = MOD_ID)
 public class ClientEvents {
@@ -18,5 +17,7 @@ public class ClientEvents {
 
         LINEN_CLOTHES.forEach((item) -> event.registerItem(clientExtension, item));
         COTTON_CLOTHES.forEach((item) -> event.registerItem(clientExtension, item));
+
+        event.registerItem(clientExtension, UMBRELLA);
     }
 }

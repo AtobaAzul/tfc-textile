@@ -42,6 +42,10 @@ public class TextileMaterials {
     public final static Holder<ArmorMaterial> LINEN_MATERIAL = createDyeableArmorMaterial("linen");
     public final static Holder<ArmorMaterial> COTTON_MATERIAL = createDyeableArmorMaterial("cotton");
 
+    //other
+    public final static Holder<ArmorMaterial> LEATHER_APRON_MATERIAL = createDyeableArmorMaterial("leather_apron");
+
+
     //for dyeable clothing
     public static Holder<ArmorMaterial> createDyeableArmorMaterial(String name) {
         ArmorMaterial material = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {

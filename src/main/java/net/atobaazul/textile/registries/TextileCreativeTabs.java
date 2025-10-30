@@ -62,7 +62,7 @@ public class TextileCreativeTabs {
                 LINEN_CLOTHES.forEach(output::accept);
                 COTTON_CLOTHES.forEach(output::accept);
 
-                output.accept(LEATHER_APRON);
+                //output.accept(LEATHER_APRON);
                 output.accept(UMBRELLA);
                 //output.accept(LEATHER_GLOVES);
                 //output.accept(SILK_GLOVES);

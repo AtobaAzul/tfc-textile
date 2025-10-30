@@ -2,7 +2,9 @@
   "required": true,
   "package": "net.atobaazul.textile.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "WaterTempModifierMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

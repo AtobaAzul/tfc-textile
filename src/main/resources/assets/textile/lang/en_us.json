@@ -87,6 +87,16 @@
   "block.textile.dead_crop.flax": "Dead Flax",
   "block.textile.dead_crop.cotton": "Dead Cotton",
   "tfc.recipe.barrel.textile.flax_fiber": "Flax Fiber",
+  "item.textile.bison_helmet": "Bison Hat",
+  "item.textile.bison_chestplate": "Bison Shirt",
+  "item.textile.bison_leggings": "Bison Pants",
+  "item.textile.bison_boots": "Bison Boots",
+  "item.textile.bison_fur": "Bison Fur",
+  "item.textile.wool_scarf": "Wool Scarf",
+  "item.textile.silk_scarf": "Silk Scarf",
+  "item.textile.cotton_scarf": "Cotton Scarf",
+  "item.textile.leather_apron": "Forging Apron",
+  "item.textile.umbrella": "Straw Umbrella",
   "itemGroup.textile.clothing": "Textile: Clothing",
   "itemGroup.textile.resources": "Textile: Resources"
 }

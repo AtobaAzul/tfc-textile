@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    " C ",
+    " C "
+  ],
+  "key": {
+    "A": {
+      "item": "tfc:straw"
+    },
+    "B": {
+      "item": "tfc:thatch"
+    },
+    "C": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "result": {
+    "id": "textile:umbrella"
+  }
+}

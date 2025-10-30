@@ -19,6 +19,7 @@ public class TextileItemTags {
 
     public static final TagKey<Item> GLOVES = curiosTag("gloves");
     public static final TagKey<Item> SCARF = curiosTag("scarf");
+    public static final TagKey<Item> UMBRELLA = curiosTag("umbrella");
 
     private static TagKey<Item> itemTag(String name) {
         return TagKey.create(Registries.ITEM, textileResource(name));

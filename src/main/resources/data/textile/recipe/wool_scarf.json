@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "tfc:wool_cloth"
+    },
+    "B": {
+      "tag": "c:strings"
+    }
+  },
+  "result": {
+    "id": "textile:wool_scarf"
+  }
+}

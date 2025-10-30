@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:item/generated",
+  "base": {
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "textile:item/umbrella_item"
+    }
+  },
+  "textures": {
+    "layer0": "textile:item/umbrella_item"
+  },
+  "loader": "neoforge:separate_transforms",
+  "perspectives": {
+    "firstperson_righthand": {
+      "parent": "textile:item/umbrella_held"
+    },
+    "firstperson_lefthand": {
+      "parent": "textile:item/umbrella_held"
+    },
+    "thirdperson_righthand": {
+      "parent": "textile:item/umbrella_held"
+    },
+    "thirdperson_lefthand": {
+      "parent": "textile:item/umbrella_held"
+    }
+  }
+}

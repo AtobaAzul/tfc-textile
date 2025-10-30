@@ -76,7 +76,7 @@ public class TextileItems {
 
 
     //accessories
-    public static final DeferredItem<Item> LEATHER_APRON = ITEMS.register("leather_apron", () -> new ArmorItem(ArmorMaterials.LEATHER,ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(60)));
+    public static final DeferredItem<Item> LEATHER_APRON = ITEMS.register("leather_apron", () -> new ArmorItem(LEATHER_APRON_MATERIAL,ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1).durability(60)));
     public static final DeferredItem<Item> UMBRELLA = basicItem("umbrella");
 
     //gloves
@@ -87,9 +87,9 @@ public class TextileItems {
 
 
     //scarfs
-    public static final DeferredItem<Item> WOOL_SCARF = basicItem("wool_scarf");
-    public static final DeferredItem<Item> SILK_SCARF = basicItem("silk_scarf");
-    public static final DeferredItem<Item> COTTON_SCARF = basicItem("cotton_scarf");
+    public static final DeferredItem<Item> WOOL_SCARF = scarfItem("wool_scarf");
+    public static final DeferredItem<Item> SILK_SCARF = scarfItem("silk_scarf");
+    public static final DeferredItem<Item> COTTON_SCARF = scarfItem("cotton_scarf");
 
 
 
@@ -118,6 +118,10 @@ public class TextileItems {
 
     private static DeferredItem<Item> basicItem(String name) {
         return ITEMS.register(name, () -> new Item(new Item.Properties().stacksTo(32)));
+    }
+
+    private static DeferredItem<Item> scarfItem(String name) {
+        return ITEMS.register(name, () -> new Item(new Item.Properties().stacksTo(1)));
     }
 
     private static DeferredItem<Item> furItem(String name) {

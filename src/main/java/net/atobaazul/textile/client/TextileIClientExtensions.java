@@ -1,8 +1,11 @@
 package net.atobaazul.textile.client;
 
 import net.atobaazul.textile.common.item.TextileItemTags;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.FastColor;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.DyedItemColor;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
@@ -22,5 +25,13 @@ public class TextileIClientExtensions implements IClientItemExtensions {
         }
 
         return stack.is(ItemTags.DYEABLE) ? FastColor.ARGB32.opaque(DyedItemColor.getOrDefault(stack, color)) : 0xFFFFFFFF;
+    }
+
+    @Override
+    public HumanoidModel.ArmPose getArmPose(LivingEntity entityLiving, InteractionHand hand, ItemStack itemStack) {
+        if (itemStack.is(UMBRELLA)) {
+            return HumanoidModel.ArmPose.SPYGLASS;
+        }
+        return null;
     }
 }
