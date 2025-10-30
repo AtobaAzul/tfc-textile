@@ -34,6 +34,7 @@ public class TextileItemTagsProvider extends ItemTagsProvider {
         IntrinsicTagAppender<Item> furClothesTag = tag(FUR_CLOTHES_TAG).replace(false);
         IntrinsicTagAppender<Item> linenClothesTag = tag(LINEN_CLOTHES_TAG).replace(false);
         IntrinsicTagAppender<Item> cottonClothesTag = tag(COTTON_CLOTHES_TAG).replace(false);
+        IntrinsicTagAppender<Item> furTag = tag(TextileItemTags.FURS_TAG).replace(false);
 
 
         //armor tags
@@ -119,7 +120,6 @@ public class TextileItemTagsProvider extends ItemTagsProvider {
         tag(TFCTags.Items.SEWING_LIGHT_CLOTH).replace(false).add(COTTON_CLOTH.get());
         tag(TFCTags.Items.HIGH_QUALITY_CLOTH).replace(false).add(COTTON_CLOTH.get());
 
-        IntrinsicTagAppender<Item> furTag = tag(TextileItemTags.FURS_TAG).replace(false);
         FURS.forEach((item) -> furTag.add(item.get()));
 
         //curios

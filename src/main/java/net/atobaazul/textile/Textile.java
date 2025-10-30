@@ -36,7 +36,6 @@ public class Textile {
         //NeoForge.EVENT_BUS.register(this);
 
         TextileItems.ITEMS.register(bus);
-        TextileLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(bus);
         TextileMaterials.MATERIALS.register(bus);
         TextileCreativeTabs.CREATIVE_MODE_TABS.register(bus);
 
@@ -44,8 +43,6 @@ public class Textile {
 
         TextileBlocks.BLOCKS.register(bus);
         TextileBlocks.BLOCK_ENTITIES.register(bus);
-
-        TextileLoot.NUMBER_PROVIDERS.register(bus);
     }
 
     private static DataManager.Reference<ClimateRange> registerClimateRange(String name) {

@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "textile:cotton",
+          "name": "textile:cotton_ball",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
@@ -22,7 +22,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "type": "textile:crop_yield_uniform",
+                "type": "tfc:crop_yield_uniform",
                 "min": 0,
                 "max": {
                   "type": "minecraft:uniform",
