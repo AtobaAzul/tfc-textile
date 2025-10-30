@@ -24,10 +24,12 @@ public class TextileCreativeTabs {
                 output.accept(PRIMITIVE_INSULATION); 
             
                 FURS.forEach(output::accept);
-            
+
+                output.accept(COTTON_SEEDS);
                 output.accept(COTTON_BALL);
                 output.accept(COTTON_STRING);
                 output.accept(COTTON_CLOTH);
+                output.accept(FLAX_SEEDS);
                 output.accept(FLAX);
                 output.accept(FLAX_FIBER);
                 output.accept(LINEN_CLOTH);
@@ -62,12 +64,12 @@ public class TextileCreativeTabs {
 
                 output.accept(LEATHER_APRON);
                 output.accept(UMBRELLA);
-                output.accept(LEATHER_GLOVES);
-                output.accept(SILK_GLOVES);
+                //output.accept(LEATHER_GLOVES);
+                //output.accept(SILK_GLOVES);
                 output.accept(SILK_SCARF);
-                output.accept(WOOL_GLOVES);
+                //output.accept(WOOL_GLOVES);
                 output.accept(WOOL_SCARF);
-                output.accept(COTTON_GLOVES);
+                //output.accept(COTTON_GLOVES);
                 output.accept(COTTON_SCARF);
 
 

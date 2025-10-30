@@ -20,6 +20,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.FastColor;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemDisplayContext;
@@ -80,7 +81,9 @@ public class ScarfRenderer implements ICurioRenderer {
         poseStack.mulPose(Axis.YP.rotation(0/*model.body.yRot*/));
         poseStack.mulPose(Axis.XP.rotation(0/*model.body.xRot*/));
 
-        itemRenderer.renderStatic(itemStack, ItemDisplayContext.NONE, i, OverlayTexture.NO_OVERLAY, poseStack, multiBufferSource, level, 0);
+        if (!entity.hasItemInSlot(EquipmentSlot.CHEST)) {
+            itemRenderer.renderStatic(itemStack, ItemDisplayContext.NONE, i, OverlayTexture.NO_OVERLAY, poseStack, multiBufferSource, level, 0);
+        }
         poseStack.popPose();
     }
 
