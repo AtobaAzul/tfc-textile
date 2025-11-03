@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "textile:cotton",
+          "name": "textile:cotton_ball",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
