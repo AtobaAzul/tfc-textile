@@ -1,18 +1,16 @@
 {
   "type": "tfc:barrel_sealed",
-  "input_item": {
-    "ingredient": {
-      "count": 1,
-      "item": "textile:flax"
-    }
-  },
+  "duration": 8000,
   "input_fluid": {
-    "fluid": "minecraft:water",
-    "amount": 200
+    "amount": 200,
+    "fluid": "minecraft:water"
+  },
+  "input_item": {
+    "count": 1,
+    "item": "textile:flax"
   },
   "output_item": {
     "count": 1,
     "id": "textile:flax_fiber"
-  },
-  "duration": 8000
+  }
 }
