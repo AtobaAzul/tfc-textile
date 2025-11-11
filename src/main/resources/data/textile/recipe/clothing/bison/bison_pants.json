@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "ACA",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:strings"
+    },
+    "B": {
+      "item": "textile:bison_fur"
+    },
+    "C": {
+      "item": "minecraft:leather_leggings"
+    }
+  },
+  "result": {
+    "id": "textile:bison_leggings"
+  }
+}
