@@ -63,7 +63,7 @@ public abstract class WaterTempModifierMixin extends TempModifier {
         double configDrySpeed = ConfigSettings.DRYOFF_SPEED.get() * DRY_SPEED;
 
         double temperature = textile$getTemperature();
-        double addAmount = WorldHelper.isInWater(entity) ? WATER_SOAK_SPEED * (isWarm ? 1 : -1) // In water
+        double addAmount = WorldHelper.isInWater(entity) ? WATER_SOAK_SPEED * (isWarm ? -1 : 1) // In water
                 : (WorldHelper.isRainingAt(entity.level(), entity.blockPosition()) && !textile$isHoldingUmbrella(entity)) ? RAIN_SOAK_SPEED // In rain
                 : 0;
         double dryAmount = CSMath.blendExp(configDrySpeed, configDrySpeed * 10, worldTemp, minWorldTemp, maxWorldTemp, 100);
