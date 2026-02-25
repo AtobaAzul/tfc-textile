@@ -126,10 +126,10 @@ configurations {
 dependencies {
     implementation "curse.maven:curios-309927:6528893"
     implementation "curse.maven:patchouli-306770:6842247"
-    implementation "curse.maven:terrafirmacraft-302973:7150812"
+    implementation "curse.maven:terrafirmacraft-302973:7634816"
     implementation "curse.maven:jei-238222:7129287"
-    implementation "curse.maven:cold-sweat-506194:7113736"
-    implementation "curse.maven:tfc-cold-sweat-1130934:7163321"
+    implementation "curse.maven:cold-sweat-506194:7492465"
+    implementation "curse.maven:tfc-cold-sweat-1130934:7677902"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
